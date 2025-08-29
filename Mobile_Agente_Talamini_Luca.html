@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Talamini Luca • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>Talamini Luca • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="farmacia all&amp;#x27; angelo amaro francesco pia zza amaro ud farmacia 4722250281 farmaciapiazza@yahoo.it">
+    <p class="title">Farmacia All&#x27; Angelo Amaro Francesco Pia zza</p>
+    <p class="meta">Amaro (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20All%27%20Angelo%20Amaro%20Francesco%20Pia&amp;r911188165f344657afb9eeaa1ae8998a=zza&amp;r26540616401e4f999c44de10ddc004ee=Amaro&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04722250281&amp;r1addcad129b44b3cb2220834a33335d5=farmaciapiazza%40yahoo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="traunero mara artegna ud   mara.virgo78@gmail.com">
+    <p class="title">TRAUNERO MARA</p>
+    <p class="meta">Artegna (UD)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=TRAUNERO%20MARA&amp;r26540616401e4f999c44de10ddc004ee=Artegna&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;r1addcad129b44b3cb2220834a33335d5=Mara.virgo78%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria la quintessenza di stefanin i claudia aviano pn erboristeria 1167970936 ">
+    <p class="title">Erboristeria La Quintessenza di Stefanin i Claudia</p>
+    <p class="meta">Aviano (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20La%20Quintessenza%20di%20Stefanin&amp;r911188165f344657afb9eeaa1ae8998a=i%20Claudia&amp;r26540616401e4f999c44de10ddc004ee=Aviano&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01167970936&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sara sanitaria ortopedia s.r.l. azzano decimo pn sanitaria ortopedia 1807460934 amministrazione@sarasanitaria.it">
+    <p class="title">Sara Sanitaria Ortopedia S.r.l.</p>
+    <p class="meta">Azzano Decimo (PN) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sara%20Sanitaria%20Ortopedia%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Azzano%20Decimo&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01807460934&amp;r1addcad129b44b3cb2220834a33335d5=amministrazione%40sarasanitaria.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia tilatti n554 di dr.ssa annamari a tilatti bertiolo ud farmacia 2170200303 tilatti@libero.it">
+    <p class="title">Farmacia Tilatti N554 di Dr.ssa Annamari a Tilatti</p>
+    <p class="meta">Bertiolo (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Tilatti%20N554%20di%20Dr.ssa%20Annamari&amp;r911188165f344657afb9eeaa1ae8998a=a%20Tilatti&amp;r26540616401e4f999c44de10ddc004ee=Bertiolo&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02170200303&amp;r1addcad129b44b3cb2220834a33335d5=tilatti%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="reno sellan caneva pn   renosellan@gmail.com">
+    <p class="title">Reno sellan</p>
+    <p class="meta">Caneva (PN)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Reno%20sellan&amp;r26540616401e4f999c44de10ddc004ee=Caneva&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;r1addcad129b44b3cb2220834a33335d5=renosellan%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia cristofoli dr.a lucia casarsa della delizia pn farmacia 1464470937 farmaciacristofoli@libero.it">
+    <p class="title">Farmacia Cristofoli Dr.a Lucia</p>
+    <p class="meta">Casarsa Della Delizia (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Cristofoli%20Dr.a%20Lucia&amp;r26540616401e4f999c44de10ddc004ee=Casarsa%20Della%20Delizia&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01464470937&amp;r1addcad129b44b3cb2220834a33335d5=farmaciacristofoli%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;albero magico s.r.l. cassacco ud erboristeria 2390510309 info@alberomagico.it">
+    <p class="title">L&#x27;Albero Magico S.r.l.</p>
+    <p class="meta">Cassacco (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Albero%20Magico%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Cassacco&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02390510309&amp;r1addcad129b44b3cb2220834a33335d5=info%40alberomagico.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia dottor comelli cervignano del friuli ud parafarmacia 1178540314 parafarmaciacomelli@gmail.com">
+    <p class="title">Parafarmacia Dottor Comelli</p>
+    <p class="meta">Cervignano Del Friuli (UD) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Dottor%20Comelli&amp;r26540616401e4f999c44de10ddc004ee=Cervignano%20Del%20Friuli&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01178540314&amp;r1addcad129b44b3cb2220834a33335d5=parafarmaciacomelli%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la genziana punto natura di chiesa grazi ella codroipo ud erboristeria 2545420305 genzianacodroipo@gmail.com">
+    <p class="title">La Genziana Punto Natura di Chiesa Grazi ella</p>
+    <p class="meta">Codroipo (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Genziana%20Punto%20Natura%20di%20Chiesa%20Grazi&amp;r911188165f344657afb9eeaa1ae8998a=ella&amp;r26540616401e4f999c44de10ddc004ee=Codroipo&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02545420305&amp;r1addcad129b44b3cb2220834a33335d5=Genzianacodroipo%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia dott.ssa pesce codroipo ud parafarmacia 1726640939 marialuciapesce@libero.it">
+    <p class="title">Parafarmacia Dott.ssa Pesce</p>
+    <p class="meta">Codroipo (UD) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Dott.ssa%20Pesce&amp;r26540616401e4f999c44de10ddc004ee=Codroipo&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01726640939&amp;r1addcad129b44b3cb2220834a33335d5=marialuciapesce%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria il melograno di carnier ant onella cordenons pn erboristeria 1184460937 erboristeria.melograno@gmail.com">
+    <p class="title">Erboristeria Il Melograno di Carnier Ant onella</p>
+    <p class="meta">Cordenons (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Il%20Melograno%20di%20Carnier%20Ant&amp;r911188165f344657afb9eeaa1ae8998a=onella&amp;r26540616401e4f999c44de10ddc004ee=Cordenons&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01184460937&amp;r1addcad129b44b3cb2220834a33335d5=erboristeria.melograno%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia &amp;quot;al redentore&amp;quot; della dr.ssa rob erta stacul cormons go farmacia 1113290314 r.stacul@tiscali.it">
+    <p class="title">Farmacia &quot;al Redentore&quot; della dr.ssa Rob erta Stacul</p>
+    <p class="meta">Cormons (GO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20%22al%20Redentore%22%20della%20dr.ssa%20Rob&amp;r911188165f344657afb9eeaa1ae8998a=erta%20Stacul&amp;r26540616401e4f999c44de10ddc004ee=Cormons&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01113290314&amp;r1addcad129b44b3cb2220834a33335d5=r.stacul%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia s. antonio faro di dr. leghissa fabio e g. rosella s.n.c. cormons go farmacia 530350313 farm.leghista@libero.it">
+    <p class="title">Farmacia S. Antonio Faro di dr. Leghissa Fabio e G. Rosella S.n.c.</p>
+    <p class="meta">Cormons (GO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20S.%20Antonio%20Faro%20di%20dr.%20Leghissa&amp;r911188165f344657afb9eeaa1ae8998a=Fabio%20e%20G.%20Rosella%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Cormons&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00530350313&amp;r1addcad129b44b3cb2220834a33335d5=farm.leghista%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san rocco srl ana, m. maraspin, s. nacci duino aurisina ts farmacia 1280870328 farmaciasanroccosnc@gmail.com">
+    <p class="title">Farmacia San Rocco Srl ana, M. Maraspin, S. Nacci</p>
+    <p class="meta">Duino Aurisina (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Rocco%20Srl&amp;r911188165f344657afb9eeaa1ae8998a=ana%2C%20M.%20Maraspin%2C%20S.%20Nacci&amp;r26540616401e4f999c44de10ddc004ee=Duino%20Aurisina&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01280870328&amp;r1addcad129b44b3cb2220834a33335d5=farmaciasanroccosnc%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria progetto benessere s.r.l. fagagna ud erboristeria 2755930308 prog.benessere@yahoo.it">
+    <p class="title">Erboristeria Progetto Benessere S.r.l.</p>
+    <p class="meta">Fagagna (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Progetto%20Benessere%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Fagagna&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02755930308&amp;r1addcad129b44b3cb2220834a33335d5=prog.benessere%40yahoo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia fiore snc dott. mirco martini e laura valvasori fiume veneto pn farmacia 1855080931 info@farmaciafiore.it">
+    <p class="title">Farmacia Fiore snc dott. Mirco Martini e Laura Valvasori</p>
+    <p class="meta">Fiume Veneto (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Fiore%20snc&amp;r911188165f344657afb9eeaa1ae8998a=dott.%20Mirco%20Martini%20e%20Laura%20Valvasori&amp;r26540616401e4f999c44de10ddc004ee=Fiume%20Veneto&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01855080931&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciafiore.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="antica farmacia alla madonna della salut e s.n.c. fiumicello ud farmacia 2720250303 farmaciadebiasio@alice.it">
+    <p class="title">Antica Farmacia Alla Madonna Della Salut e S.n.c.</p>
+    <p class="meta">Fiumicello (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Antica%20Farmacia%20Alla%20Madonna%20Della%20Salut&amp;r911188165f344657afb9eeaa1ae8998a=e%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Fiumicello&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02720250303&amp;r1addcad129b44b3cb2220834a33335d5=farmaciadebiasio%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia di marino del dott. gian enrico gaspardis &amp;amp; c. s.a.s. fogliano redipuglia go farmacia 1024560318 farmaciadimarino@virgilio.it">
+    <p class="title">Farmacia di Marino del Dott. Gian Enrico Gaspardis &amp; C. S.a.s.</p>
+    <p class="meta">Fogliano Redipuglia (GO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20di%20Marino%20del%20Dott.%20Gian%20Enrico&amp;r911188165f344657afb9eeaa1ae8998a=Gaspardis%20%26%20C.%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Fogliano%20Redipuglia&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01024560318&amp;r1addcad129b44b3cb2220834a33335d5=farmaciadimarino%40virgilio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia cons di cons dott.ssa manuela gemona del friuli ud farmacia 1839990304 ">
+    <p class="title">Farmacia Cons di Cons Dott.ssa Manuela</p>
+    <p class="meta">Gemona Del Friuli (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Cons%20di%20Cons%20Dott.ssa%20Manuela&amp;r26540616401e4f999c44de10ddc004ee=Gemona%20Del%20Friuli&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01839990304&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria il girasole di marcon nicolina gorizia go erboristeria 371090317 ilgirasole@libero.it">
+    <p class="title">Erboristeria Il Girasole di Marcon Nicolina</p>
+    <p class="meta">Gorizia (GO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Il%20Girasole%20di&amp;r911188165f344657afb9eeaa1ae8998a=Marcon%20Nicolina&amp;r26540616401e4f999c44de10ddc004ee=Gorizia&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00371090317&amp;r1addcad129b44b3cb2220834a33335d5=ilgirasole%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="azienda speciale farmaceutica di lignano sabbiadoro lignano sabbiadoro ud farmacia 827170309 info@farmacialignano.it">
+    <p class="title">Azienda Speciale Farmaceutica di Lignano Sabbiadoro</p>
+    <p class="meta">Lignano Sabbiadoro (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Azienda%20Speciale%20Farmaceutica&amp;r911188165f344657afb9eeaa1ae8998a=di%20Lignano%20Sabbiadoro&amp;r26540616401e4f999c44de10ddc004ee=Lignano%20Sabbiadoro&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00827170309&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmacialignano.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria naturelle di pivetta alessandra maron di brugnera pn erboristeria 1476820939 ">
+    <p class="title">Erboristeria Naturelle di Pivetta Alessandra</p>
+    <p class="meta">Maron di Brugnera (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Naturelle&amp;r911188165f344657afb9eeaa1ae8998a=di%20Pivetta%20Alessandra&amp;r26540616401e4f999c44de10ddc004ee=Maron%20di%20Brugnera&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01476820939&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="il filo di paglia di vosca rita e davide comolli s.n.c. monfalcone go erboristeria 182330316 info@ilfilodipaglia.com">
+    <p class="title">Il Filo Di Paglia di Vosca Rita e Davide Comolli S.n.c.</p>
+    <p class="meta">Monfalcone (GO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Il%20Filo%20Di%20Paglia%20di%20Vosca%20Rita%20e%20Davide&amp;r911188165f344657afb9eeaa1ae8998a=Comolli%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Monfalcone&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00182330316&amp;r1addcad129b44b3cb2220834a33335d5=info%40ilfilodipaglia.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la magia verde di carafa maria monfalcone go erboristeria 383490315 info@lamagiaverde.com">
+    <p class="title">La Magia Verde di Carafa Maria</p>
+    <p class="meta">Monfalcone (GO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Magia%20Verde&amp;r911188165f344657afb9eeaa1ae8998a=di%20Carafa%20Maria&amp;r26540616401e4f999c44de10ddc004ee=Monfalcone&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00383490315&amp;r1addcad129b44b3cb2220834a33335d5=info%40lamagiaverde.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="medical center s.r.l. del dott. nardone felice monfalcone go professionista 1162980310 info.medicalcenter.srl@gmail.com">
+    <p class="title">MEDICAL CENTER S.r.l. del dott. Nardone Felice</p>
+    <p class="meta">Monfalcone (GO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=MEDICAL%20CENTER%20S.r.l.%20del%20dott.%20Nardone&amp;r911188165f344657afb9eeaa1ae8998a=Felice&amp;r26540616401e4f999c44de10ddc004ee=Monfalcone&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01162980310&amp;r1addcad129b44b3cb2220834a33335d5=info.medicalcenter.srl%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="herba salutaris di chiandotto chiara palmanova ud erboristeria 2329200303 herbasalutaris@gmail.com">
+    <p class="title">HERBA SALUTARIS DI CHIANDOTTO CHIARA</p>
+    <p class="meta">PALMANOVA (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=HERBA%20SALUTARIS%20DI%20CHIANDOTTO%20CHIARA&amp;r26540616401e4f999c44de10ddc004ee=PALMANOVA&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02329200303&amp;r1addcad129b44b3cb2220834a33335d5=herbasalutaris%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia sanitaria ortopedia dott.ssa merlo di merlo francesca porenone pn parafarmacia 1806540934 parafarmacia.merlo@gmail.com">
+    <p class="title">Parafarmacia sanitaria ortopedia Dott.ssa merlo di merlo francesca</p>
+    <p class="meta">PORENONE (PN) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20sanitaria%20ortopedia&amp;r911188165f344657afb9eeaa1ae8998a=Dott.ssa%20merlo%20di%20merlo%20francesca&amp;r26540616401e4f999c44de10ddc004ee=PORENONE&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01806540934&amp;r1addcad129b44b3cb2220834a33335d5=parafarmacia.merlo%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la mimosa di finotti nadia &amp;amp; c. s.n.c. palmanova ud erboristeria 1579350305 lamimosa88@libero.it">
+    <p class="title">La Mimosa Di Finotti Nadia &amp; C. S.n.c.</p>
+    <p class="meta">Palmanova (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Mimosa%20Di%20Finotti%20Nadia%20%26%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Palmanova&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01579350305&amp;r1addcad129b44b3cb2220834a33335d5=lamimosa88%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia s. martino dott. zampis dav ide pasian di prato ud parafarmacia 2456820303 davidez@fastweb.it">
+    <p class="title">Parafarmacia S. Martino Dott. Zampis Dav ide</p>
+    <p class="meta">Pasian Di Prato (UD) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20S.%20Martino%20Dott.%20Zampis%20Dav&amp;r911188165f344657afb9eeaa1ae8998a=ide&amp;r26540616401e4f999c44de10ddc004ee=Pasian%20Di%20Prato&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02456820303&amp;r1addcad129b44b3cb2220834a33335d5=davidez%40fastweb.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="natura amica mia di pivetta manuela polcenigo pn erboristeria 1817780933 farmanatura.salute@libero.it">
+    <p class="title">Natura Amica Mia di Pivetta Manuela</p>
+    <p class="meta">Polcenigo (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Natura%20Amica%20Mia%20di%20Pivetta%20Manuela&amp;r26540616401e4f999c44de10ddc004ee=Polcenigo&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01817780933&amp;r1addcad129b44b3cb2220834a33335d5=farmanatura.salute%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia dr. de lucca gianpaolo porcia pn farmacia 2491510265 amministrazione@farmaciadelucca.it">
+    <p class="title">Farmacia Dr. De Lucca Gianpaolo</p>
+    <p class="meta">Porcia (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Dr.%20De%20Lucca%20Gianpaolo&amp;r26540616401e4f999c44de10ddc004ee=Porcia&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02491510265&amp;r1addcad129b44b3cb2220834a33335d5=amministrazione%40farmaciadelucca.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia dr. emilio badanai scalzotto pordenone pn farmacia 1318590930 info@farmaciabadanaiscalzotto.it">
+    <p class="title">Farmacia Dr. Emilio Badanai Scalzotto</p>
+    <p class="meta">Pordenone (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Dr.%20Emilio%20Badanai%20Scalzotto&amp;r26540616401e4f999c44de10ddc004ee=Pordenone&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01318590930&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciabadanaiscalzotto.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia comunale n429 comune di cordenons pordenone pn farmacia 142410935 farmacia@comune.cordenons.pn.it">
+    <p class="title">Farmacia comunale n429 Comune di cordenons</p>
+    <p class="meta">Pordenone (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20comunale%20n429&amp;r911188165f344657afb9eeaa1ae8998a=Comune%20di%20cordenons&amp;r26540616401e4f999c44de10ddc004ee=Pordenone&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00142410935&amp;r1addcad129b44b3cb2220834a33335d5=farmacia%40comune.cordenons.pn.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia libertà s.n.c di valdevit g. e scramoncin paola pordenone pn farmacia 1815060932 farmacialibertapn@gmail.com">
+    <p class="title">Farmacia libertà s.n.c di Valdevit G. e Scramoncin Paola</p>
+    <p class="meta">Pordenone (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20libert%C3%A0%20s.n.c%20di%20Valdevit%20G.&amp;r911188165f344657afb9eeaa1ae8998a=e%20Scramoncin%20Paola&amp;r26540616401e4f999c44de10ddc004ee=Pordenone&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01815060932&amp;r1addcad129b44b3cb2220834a33335d5=farmacialibertapn%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria dott.ssa anna del pup &amp;amp; c srl pordenone pn sanitaria ortopedia 1380010932 amministrazione@sanitariadelpup.it">
+    <p class="title">Sanitaria Dott.ssa Anna del Pup &amp; C SRL</p>
+    <p class="meta">Pordenone (PN) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Dott.ssa%20Anna%20del%20Pup%20%26%20C%20SRL&amp;r26540616401e4f999c44de10ddc004ee=Pordenone&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01380010932&amp;r1addcad129b44b3cb2220834a33335d5=amministrazione%40sanitariadelpup.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia sant&amp;#x27;andrea s.n.c. dei dottori elsa tosolini ed alessio piromalli pozzuolo del friuli ud farmacia 2995970304 farmaciasantandrea@gmail.com">
+    <p class="title">Farmacia Sant&#x27;Andrea S.n.c. dei dottori Elsa Tosolini ed Alessio Piromalli</p>
+    <p class="meta">Pozzuolo Del Friuli (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Sant%27Andrea%20S.n.c.%20dei%20dottori&amp;r911188165f344657afb9eeaa1ae8998a=Elsa%20Tosolini%20ed%20Alessio%20Piromalli&amp;r26540616401e4f999c44de10ddc004ee=Pozzuolo%20Del%20Friuli&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02995970304&amp;r1addcad129b44b3cb2220834a33335d5=farmaciasantandrea%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="dott. ciot paolo prata di pordenone pn professionista  ">
+    <p class="title">Dott. Ciot Paolo</p>
+    <p class="meta">Prata Di Pordenone (PN) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Dott.%20Ciot%20Paolo&amp;r26540616401e4f999c44de10ddc004ee=Prata%20Di%20Pordenone&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="bio erboristeria magie naturali di crist ina basana remanzacco ud erboristeria 2817290303 info@magienturali.it">
+    <p class="title">Bio Erboristeria Magie Naturali di Crist ina Basana</p>
+    <p class="meta">Remanzacco (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Bio%20Erboristeria%20Magie%20Naturali%20di%20Crist&amp;r911188165f344657afb9eeaa1ae8998a=ina%20Basana&amp;r26540616401e4f999c44de10ddc004ee=Remanzacco&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02817290303&amp;r1addcad129b44b3cb2220834a33335d5=info%40magienturali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la quintessenza di anna maria di fant rivignano ud erboristeria 2231320306 la.quintessenza@libero.it">
+    <p class="title">La Quintessenza Di Anna Maria Di Fant</p>
+    <p class="meta">Rivignano (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Quintessenza%20Di%20Anna%20Maria%20Di%20Fant&amp;r26540616401e4f999c44de10ddc004ee=Rivignano&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02231320306&amp;r1addcad129b44b3cb2220834a33335d5=la.quintessenza%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia aquilegia il giardino della salute di gabriella pich &amp;amp; c. s.n.c. ronchi dei legionari go parafarmacia 464080316 ">
+    <p class="title">Parafarmacia Aquilegia Il Giardino Della Salute Di Gabriella Pich &amp; C. S.n.c.</p>
+    <p class="meta">Ronchi Dei Legionari (GO) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Aquilegia%20Il%20Giardino%20Della&amp;r911188165f344657afb9eeaa1ae8998a=Salute%20Di%20Gabriella%20Pich%20%26%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Ronchi%20Dei%20Legionari&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00464080316&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria bionatura di rigo giuseppe roveredo in piano pn erboristeria 1147490930 erboristeriabionatura@gmail.com">
+    <p class="title">Erboristeria Bionatura di Rigo Giuseppe</p>
+    <p class="meta">Roveredo In Piano (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Bionatura%20di%20Rigo%20Giuseppe&amp;r26540616401e4f999c44de10ddc004ee=Roveredo%20In%20Piano&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01147490930&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriabionatura%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia dott. moneghini snc di moneghin i dott. ferdinando e c. ruda ud farmacia 2626220301 farmaciaruda@gmail.com">
+    <p class="title">Farmacia dott. Moneghini Snc di Moneghin i dott. Ferdinando e C.</p>
+    <p class="meta">Ruda (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20dott.%20Moneghini%20Snc%20di%20Moneghin&amp;r911188165f344657afb9eeaa1ae8998a=i%20dott.%20Ferdinando%20e%20C.&amp;r26540616401e4f999c44de10ddc004ee=Ruda&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02626220301&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaruda%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="articoli sanitari-ortopedici chiaradia di basso elisa sacile pn sanitaria ortopedia 1786300937 ortopediasanitaria.chiaradia@gmail.com">
+    <p class="title">ARTICOLI SANITARI-ORTOPEDICI CHIARADIA DI BASSO ELISA</p>
+    <p class="meta">SACILE (PN) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=ARTICOLI%20SANITARI-ORTOPEDICI%20CHIARADIA&amp;r911188165f344657afb9eeaa1ae8998a=DI%20BASSO%20ELISA&amp;r26540616401e4f999c44de10ddc004ee=SACILE&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01786300937&amp;r1addcad129b44b3cb2220834a33335d5=ortopediasanitaria.chiaradia%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia vittoria s.n.c. gianna vido e sara della giustina sacile pn farmacia 1812570933 farmavittoriasacile@libero.it">
+    <p class="title">FARMACIA VITTORIA S.N.C. GIANNA VIDO E SARA DELLA GIUSTINA</p>
+    <p class="meta">Sacile (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=FARMACIA%20VITTORIA%20S.N.C.&amp;r911188165f344657afb9eeaa1ae8998a=GIANNA%20VIDO%20E%20SARA%20DELLA%20GIUSTINA&amp;r26540616401e4f999c44de10ddc004ee=Sacile&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01812570933&amp;r1addcad129b44b3cb2220834a33335d5=farmavittoriasacile%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="guglielmo messina sacile pn professionista 1825140930 gulimessina23@gmail.com">
+    <p class="title">Guglielmo Messina</p>
+    <p class="meta">Sacile (PN) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Guglielmo%20Messina&amp;r26540616401e4f999c44de10ddc004ee=Sacile&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01825140930&amp;r1addcad129b44b3cb2220834a33335d5=gulimessina23%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria valeas di monastier flavia san giovanni di casarsa pn erboristeria 498050939 flavia@erboristeriavaleas.it">
+    <p class="title">Erboristeria Valeas di Monastier Flavia</p>
+    <p class="meta">San Giovanni Di Casarsa (PN) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Valeas%20di%20Monastier%20Flavia&amp;r26540616401e4f999c44de10ddc004ee=San%20Giovanni%20Di%20Casarsa&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00498050939&amp;r1addcad129b44b3cb2220834a33335d5=flavia%40erboristeriavaleas.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia di villanova s.n.c. di dr. cris tina busatto &amp;amp; c. s.a.s. san giovanni al natisone ud farmacia 2888570302 info@farmaciavillanovajudrio.eu">
+    <p class="title">Farmacia di Villanova S.n.c. di dr. Cris tina Busatto &amp; C. S.a.s.</p>
+    <p class="meta">San Giovanni al Natisone (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20di%20Villanova%20S.n.c.%20di%20dr.%20Cris&amp;r911188165f344657afb9eeaa1ae8998a=tina%20Busatto%20%26%20C.%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=San%20Giovanni%20al%20Natisone&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02888570302&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciavillanovajudrio.eu&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia sorc di giorgio &amp;amp; alenka s.n.c. san lorenzo isontino go farmacia 547980318 farmacia.sorc@tiscali.it">
+    <p class="title">Farmacia Sorc Di Giorgio &amp; Alenka S.n.c.</p>
+    <p class="meta">San Lorenzo Isontino (GO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Sorc%20Di%20Giorgio%20%26%20Alenka%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=San%20Lorenzo%20Isontino&amp;r8df9a2a8446640338ce40a1c53c513d7=GO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00547980318&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.sorc%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia scolaris &amp;amp; c. s.n.c. sgonico ts farmacia 1287910325 farmacia.budin@gmail.com">
+    <p class="title">Farmacia Scolaris &amp; C. S.n.c.</p>
+    <p class="meta">Sgonico (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Scolaris%20%26%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Sgonico&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01287910325&amp;r1addcad129b44b3cb2220834a33335d5=Farmacia.budin%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia visini di alessandro kaspar &amp;amp; c . s.n.c. sutrio ud farmacia 2872890302 farmacia.visini@gmail.com">
+    <p class="title">Farmacia Visini di Alessandro Kaspar &amp; C . s.n.c.</p>
+    <p class="meta">Sutrio (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Visini%20di%20Alessandro%20Kaspar%20%26%20C&amp;r911188165f344657afb9eeaa1ae8998a=.%20s.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Sutrio&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02872890302&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.visini%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia sale verde di gaia di tondo manlio &amp;amp; c. s.n.c. tavagnacco ud parafarmacia 2357670302 parafarmaciasaleverde@hotmail.it">
+    <p class="title">Parafarmacia Sale Verde di Gaia Di Tondo Manlio &amp; C. S.n.c.</p>
+    <p class="meta">Tavagnacco (UD) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Sale%20Verde%20di%20Gaia%20Di%20Tondo&amp;r911188165f344657afb9eeaa1ae8998a=Manlio%20%26%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Tavagnacco&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02357670302&amp;r1addcad129b44b3cb2220834a33335d5=parafarmaciasaleverde%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;erboristeria s.a.s. di adami miriam &amp;amp; c. tolmezzo ud erboristeria 1253110306 erboristeriama@gmail.com">
+    <p class="title">L&#x27;Erboristeria S.a.s. di Adami Miriam &amp; C.</p>
+    <p class="meta">Tolmezzo (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Erboristeria%20S.a.s.%20di%20Adami%20Miriam%20%26&amp;r911188165f344657afb9eeaa1ae8998a=C.&amp;r26540616401e4f999c44de10ddc004ee=Tolmezzo&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01253110306&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriama%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia pascolini torreano ud farmacia 2590890303 ">
+    <p class="title">Farmacia Pascolini</p>
+    <p class="meta">Torreano (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Pascolini&amp;r26540616401e4f999c44de10ddc004ee=Torreano&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02590890303&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="alberto marson trieste ts professionista 4595930266 ft.marson@gmail.com">
+    <p class="title">Alberto Marson</p>
+    <p class="meta">Trieste (TS) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Alberto%20Marson&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04595930266&amp;r1addcad129b44b3cb2220834a33335d5=ft.marson%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia ai due lucci trieste ts farmacia 1213470329 due.lucci@gmail.com">
+    <p class="title">Farmacia Ai Due Lucci</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Ai%20Due%20Lucci&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01213470329&amp;r1addcad129b44b3cb2220834a33335d5=due.lucci%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia al redentore trieste ts farmacia 1045940325 info@farmaciaalredentore.it">
+    <p class="title">Farmacia Al Redentore</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Al%20Redentore&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01045940325&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciaalredentore.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia al san lorenzo s.a.s. della dot t.ssa bruna maria luisa &amp;amp; c. trieste ts farmacia 1337220329 farmacia.sanlorenzo@tiscali.it">
+    <p class="title">Farmacia Al San Lorenzo S.a.s. della Dot t.ssa Bruna Maria Luisa &amp; C.</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Al%20San%20Lorenzo%20S.a.s.%20della%20Dot&amp;r911188165f344657afb9eeaa1ae8998a=t.ssa%20Bruna%20Maria%20Luisa%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01337220329&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.sanlorenzo%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia all&amp;#x27;igea s.n.c. trieste ts farmacia 1193100326 info@farmaciaigeatrieste.it">
+    <p class="title">Farmacia All&#x27;Igea S.n.c.</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20All%27Igea%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01193100326&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciaigeatrieste.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia all&amp;#x27;orologio s.a.s. trieste ts farmacia 1313670323 farmaciaorologiots@dottoressagiulia.com">
+    <p class="title">Farmacia All&#x27;Orologio S.a.s.</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20All%27Orologio%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01313670323&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaorologiots%40dottoressagiulia.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia alla maddalena del dott. catani a andrea trieste ts farmacia 1223910322 farmaciamaddalena@virgilio.it">
+    <p class="title">Farmacia Alla Maddalena Del Dott. Catani a Andrea</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Alla%20Maddalena%20Del%20Dott.%20Catani&amp;r911188165f344657afb9eeaa1ae8998a=a%20Andrea&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01223910322&amp;r1addcad129b44b3cb2220834a33335d5=farmaciamaddalena%40virgilio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia alla salute trieste ts farmacia 897860326 info@farmaciaallasalutetrieste.it">
+    <p class="title">Farmacia Alla Salute</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Alla%20Salute&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00897860326&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciaallasalutetrieste.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia amazzone trionfante trieste ts farmacia 854770328 info@farmaciaamazzone.it">
+    <p class="title">Farmacia Amazzone Trionfante</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Amazzone%20Trionfante&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00854770328&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciaamazzone.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia campi elisi s.n.c. di f. tromba e g. patrizio trieste ts farmacia 918880329 farmaciacampielisi@gmail.com">
+    <p class="title">Farmacia Campi Elisi S.n.c. di F. Tromba e G. Patrizio</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Campi%20Elisi%20S.n.c.%20di%20F.%20Tromba&amp;r911188165f344657afb9eeaa1ae8998a=e%20G.%20Patrizio&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00918880329&amp;r1addcad129b44b3cb2220834a33335d5=farmaciacampielisi%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia fontana imperiale s.n.c. trieste ts farmacia 976660324 infamministrazione@fontanaimperiale.it">
+    <p class="title">Farmacia Fontana Imperiale S.n.c.</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Fontana%20Imperiale%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00976660324&amp;r1addcad129b44b3cb2220834a33335d5=infamministrazione%40fontanaimperiale.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia g.b. busolini di francesca buso lini trieste ts farmacia 1255650325 info@farmaciabusolini.it">
+    <p class="title">Farmacia G.B. Busolini di Francesca Buso lini</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20G.B.%20Busolini%20di%20Francesca%20Buso&amp;r911188165f344657afb9eeaa1ae8998a=lini&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01255650325&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciabusolini.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia moderna della dott.ssa barbara casula trieste ts farmacia 1197550328 f.moderna@tiscali.it">
+    <p class="title">Farmacia Moderna Della Dott.ssa Barbara Casula</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Moderna%20Della%20Dott.ssa%20Barbara&amp;r911188165f344657afb9eeaa1ae8998a=Casula&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01197550328&amp;r1addcad129b44b3cb2220834a33335d5=f.moderna%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia rubino s.n.c. di gianni rubino e umberto rubino trieste ts farmacia 1162910325 fatture@farmaciarubino.net">
+    <p class="title">Farmacia Rubino S.n.c. di Gianni Rubino e Umberto Rubino</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Rubino%20S.n.c.%20di%20Gianni%20Rubino&amp;r911188165f344657afb9eeaa1ae8998a=e%20Umberto%20Rubino&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01162910325&amp;r1addcad129b44b3cb2220834a33335d5=fatture%40farmaciarubino.net&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia alla redenzione s.n.c. trieste ts farmacia 1158460327 farmaciaredenzione@gmail.com">
+    <p class="title">Farmacia alla Redenzione s.n.c.</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20alla%20Redenzione%20s.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01158460327&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaredenzione%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacie neri s.r.l trieste ts farmacia 1380620326 nerifarmacia@yahoo.it">
+    <p class="title">Farmacie Neri S.R.L</p>
+    <p class="meta">Trieste (TS) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacie%20Neri%20S.R.L&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01380620326&amp;r1addcad129b44b3cb2220834a33335d5=nerifarmacia%40yahoo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="monica paronitti trieste ts professionista 1004130322 ">
+    <p class="title">Monica Paronitti</p>
+    <p class="meta">Trieste (TS) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Monica%20Paronitti&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01004130322&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="punto benessere srl trieste ts erboristeria 1319930325 info@puntobenessre.it">
+    <p class="title">Punto Benessere SRL</p>
+    <p class="meta">Trieste (TS) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Punto%20Benessere%20SRL&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01319930325&amp;r1addcad129b44b3cb2220834a33335d5=info%40puntobenessre.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="scalici irene trieste ts professionista 1230420323 ">
+    <p class="title">Scalici Irene</p>
+    <p class="meta">Trieste (TS) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Scalici%20Irene&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01230420323&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="valentina del mistro trieste ts professionista 1257610327 valentinadelmistro@gmail.com">
+    <p class="title">Valentina Del Mistro</p>
+    <p class="meta">Trieste (TS) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Valentina%20Del%20Mistro&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01257610327&amp;r1addcad129b44b3cb2220834a33335d5=valentinadelmistro%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="zancolich federico trieste ts professionista 1294930324 ">
+    <p class="title">Zancolich Federico</p>
+    <p class="meta">Trieste (TS) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Zancolich%20Federico&amp;r26540616401e4f999c44de10ddc004ee=Trieste&amp;r8df9a2a8446640338ce40a1c53c513d7=TS&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01294930324&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="dr.ssa del tatto stefania udine ud professionista 2695900304 drstefaniadt@gmail.com">
+    <p class="title">Dr.ssa Del Tatto Stefania</p>
+    <p class="meta">Udine (UD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Dr.ssa%20Del%20Tatto%20Stefania&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02695900304&amp;r1addcad129b44b3cb2220834a33335d5=drstefaniadt%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria cuman di virgilio attilio ( esercizio farmaceutico) udine ud erboristeria 2760540308 erboristeria.cuman@iol.it">
+    <p class="title">Erboristeria Cuman di Virgilio Attilio ( Esercizio Farmaceutico)</p>
+    <p class="meta">Udine (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Cuman%20di%20Virgilio%20Attilio%20%28&amp;r911188165f344657afb9eeaa1ae8998a=Esercizio%20Farmaceutico%29&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02760540308&amp;r1addcad129b44b3cb2220834a33335d5=erboristeria.cuman%40iol.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria il giardino dei tigli di co lle marilena udine ud erboristeria 1799770308 ilgiardinodeitigli@gmail.com">
+    <p class="title">Erboristeria Il Giardino Dei Tigli di Co lle Marilena</p>
+    <p class="meta">Udine (UD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Il%20Giardino%20Dei%20Tigli%20di%20Co&amp;r911188165f344657afb9eeaa1ae8998a=lle%20Marilena&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01799770308&amp;r1addcad129b44b3cb2220834a33335d5=ilgiardinodeitigli%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia colutta dr. gianpaolo &amp;amp; c. s.n. c. udine ud farmacia 2678760303 farmaciacoluttagpl@libero.it">
+    <p class="title">Farmacia Colutta Dr. Gianpaolo &amp; C. S.n. c.</p>
+    <p class="meta">Udine (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Colutta%20Dr.%20Gianpaolo%20%26%20C.%20S.n.&amp;r911188165f344657afb9eeaa1ae8998a=c.&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02678760303&amp;r1addcad129b44b3cb2220834a33335d5=farmaciacoluttagpl%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia favero s.a.s. di michele favero e c. udine ud farmacia 2753510300 info@farmaciafavero.it">
+    <p class="title">Farmacia Favero S.a.s. Di Michele Favero e C.</p>
+    <p class="meta">Udine (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Favero%20S.a.s.%20Di%20Michele%20Favero&amp;r911188165f344657afb9eeaa1ae8998a=e%20C.&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02753510300&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciafavero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san gottardo s.a.s. udine ud farmacia 2950310306 farmaciamanganottisas@gmail.com">
+    <p class="title">Farmacia san Gottardo s.a.s.</p>
+    <p class="meta">Udine (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20san%20Gottardo%20s.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02950310306&amp;r1addcad129b44b3cb2220834a33335d5=farmaciamanganottisas%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la sanitaria del benessere del dott. davide zampis &amp;amp; c. sas udine ud parafarmacia 3082360300 issocrates.sas@gmail.com">
+    <p class="title">La sanitaria del benessere Del dott. Davide zampis &amp; C. Sas</p>
+    <p class="meta">Udine (UD) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20sanitaria%20del%20benessere&amp;r911188165f344657afb9eeaa1ae8998a=Del%20dott.%20Davide%20zampis%20%26%20C.%20Sas&amp;r26540616401e4f999c44de10ddc004ee=Udine&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03082360300&amp;r1addcad129b44b3cb2220834a33335d5=issocrates.sas%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia santa maria del dr. delbianco a ttilio &amp;amp; alessia s.n.c. villa vicentina ud farmacia 2772410300 info@farmaciasantamaria.it">
+    <p class="title">Farmacia Santa Maria del dr. Delbianco A ttilio &amp; Alessia S.n.c.</p>
+    <p class="meta">Villa Vicentina (UD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Santa%20Maria%20del%20dr.%20Delbianco%20A&amp;r911188165f344657afb9eeaa1ae8998a=ttilio%20%26%20Alessia%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Villa%20Vicentina&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02772410300&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciasantamaria.it&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia rosa dei venti s.n.c delle dr.s se battistella c. zoppola pn farmacia 1824460933 farmaciarosadeiventi@gmail.com">
+    <p class="title">Farmacia Rosa dei Venti S.N.C delle Dr.s se Battistella C.</p>
+    <p class="meta">Zoppola (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Rosa%20dei%20Venti%20S.N.C%20delle%20Dr.s&amp;r911188165f344657afb9eeaa1ae8998a=se%20Battistella%20C.&amp;r26540616401e4f999c44de10ddc004ee=Zoppola&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01824460933&amp;r1addcad129b44b3cb2220834a33335d5=farmaciarosadeiventi%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia trojani del dott. valentino tro jani &amp;amp; c. s.a.s. zoppola pn farmacia 1598550935 ">
+    <p class="title">Farmacia Trojani del Dott. Valentino Tro jani &amp; C. S.a.s.</p>
+    <p class="meta">Zoppola (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Trojani%20del%20Dott.%20Valentino%20Tro&amp;r911188165f344657afb9eeaa1ae8998a=jani%20%26%20C.%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Zoppola&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01598550935&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="zof valentina zugliano ud professionista  vale.zof@gmail.com">
+    <p class="title">Zof Valentina</p>
+    <p class="meta">Zugliano (UD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Zof%20Valentina&amp;r26540616401e4f999c44de10ddc004ee=Zugliano&amp;r8df9a2a8446640338ce40a1c53c513d7=UD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;r1addcad129b44b3cb2220834a33335d5=vale.zof%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia rosa dr sante snc dei dr a.v.&amp;amp; g.rosa arba pn farmacia 1507890935 farmacia@farmacia-arba.eu">
+    <p class="title">Farmacia Rosa Dr Sante Snc dei Dr A.v.&amp; G.Rosa</p>
+    <p class="meta">arba (PN) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Rosa%20Dr%20Sante%20Snc&amp;r911188165f344657afb9eeaa1ae8998a=dei%20Dr%20A.v.%26%20G.Rosa&amp;r26540616401e4f999c44de10ddc004ee=arba&amp;r8df9a2a8446640338ce40a1c53c513d7=PN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01507890935&amp;r1addcad129b44b3cb2220834a33335d5=farmacia%40farmacia-arba.eu&amp;r59bc1e759dc143c48cba2b322870aea3=Talamini%20Luca" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>

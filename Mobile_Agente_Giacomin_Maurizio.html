@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Giacomin Maurizio • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>Giacomin Maurizio • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="hotel terme salus abano terme pd altro 00372770289 salus@salusterme.it">
+    <p class="title">Hotel Terme Salus</p>
+    <p class="meta">Abano Terme (PD) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Hotel%20Terme%20Salus&amp;r26540616401e4f999c44de10ddc004ee=Abano%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00372770289&amp;r1addcad129b44b3cb2220834a33335d5=salus%40salusterme.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="malaika s.r.l. abano terme pd erboristeria 05044130283 info@malaikacuorenatura.it">
+    <p class="title">Malaika S.r.l.</p>
+    <p class="meta">Abano Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Malaika%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Abano%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05044130283&amp;r1addcad129b44b3cb2220834a33335d5=info%40malaikacuorenatura.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="naturè di cavaliere alessandra erboriste ria parafarmacia abano terme pd erboristeria 05040340282 alessandra.cavaliere@gmail.com">
+    <p class="title">Naturè di Cavaliere Alessandra Erboriste ria Parafarmacia</p>
+    <p class="meta">Abano Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Natur%C3%A8%20di%20Cavaliere%20Alessandra%20Erboriste&amp;r911188165f344657afb9eeaa1ae8998a=ria%20Parafarmacia&amp;r26540616401e4f999c44de10ddc004ee=Abano%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05040340282&amp;r1addcad129b44b3cb2220834a33335d5=alessandra.cavaliere%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="radicebio s.r.l. abano terme pd erboristeria 04870290287 abano1@naturasi.it">
+    <p class="title">RADICEBIO S.R.L.</p>
+    <p class="meta">Abano Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=RADICEBIO%20S.R.L.&amp;r26540616401e4f999c44de10ddc004ee=Abano%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04870290287&amp;r1addcad129b44b3cb2220834a33335d5=abano1%40naturasi.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sacra natura erboristeria di zabeo stefa nia abano terme pd erboristeria 04525920288 erboristeriasacranatura@gmail.com">
+    <p class="title">Sacra Natura Erboristeria Di Zabeo Stefa nia</p>
+    <p class="meta">Abano Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sacra%20Natura%20Erboristeria%20Di%20Zabeo%20Stefa&amp;r911188165f344657afb9eeaa1ae8998a=nia&amp;r26540616401e4f999c44de10ddc004ee=Abano%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04525920288&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriasacranatura%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria efedra di legnaro antonella adria ro erboristeria 00745200295 efedra.erboristeria@gmail.com">
+    <p class="title">Erboristeria Efedra Di Legnaro Antonella</p>
+    <p class="meta">Adria (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Efedra%20Di%20Legnaro%20Antonella&amp;r26540616401e4f999c44de10ddc004ee=Adria&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00745200295&amp;r1addcad129b44b3cb2220834a33335d5=efedra.erboristeria%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria benessere più di emanuele p attaro albignasego pd erboristeria 04697850289 emanuelepattaro76@gmail.com">
+    <p class="title">Erboristeria Benessere Più Di Emanuele P attaro</p>
+    <p class="meta">Albignasego (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Benessere%20Pi%C3%B9%20Di%20Emanuele%20P&amp;r911188165f344657afb9eeaa1ae8998a=attaro&amp;r26540616401e4f999c44de10ddc004ee=Albignasego&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04697850289&amp;r1addcad129b44b3cb2220834a33335d5=emanuelepattaro76%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;erboristeria s.r.l. dr. fabio cappella to albignasego pd erboristeria 02028220289 ">
+    <p class="title">L&#x27;Erboristeria S.r.l. Dr. Fabio Cappella to</p>
+    <p class="meta">Albignasego (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Erboristeria%20S.r.l.%20Dr.%20Fabio%20Cappella&amp;r911188165f344657afb9eeaa1ae8998a=to&amp;r26540616401e4f999c44de10ddc004ee=Albignasego&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02028220289&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria come una volta di facco rom ina arsego pd erboristeria 04261660288 romina.facco@alice.it">
+    <p class="title">Erboristeria Come Una Volta di Facco Rom ina</p>
+    <p class="meta">Arsego (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Come%20Una%20Volta%20di%20Facco%20Rom&amp;r911188165f344657afb9eeaa1ae8998a=ina&amp;r26540616401e4f999c44de10ddc004ee=Arsego&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04261660288&amp;r1addcad129b44b3cb2220834a33335d5=romina.facco%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia nuova sas della dott.ssa bertagnon maria luisa barbona pd farmacia 05505500289 nuovasalute@virgilio.it">
+    <p class="title">FARMACIA NUOVA SAS DELLA DOTT.SSA BERTAGNON MARIA LUISA</p>
+    <p class="meta">BARBONA (PD) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=FARMACIA%20NUOVA%20SAS%20DELLA%20DOTT.SSA&amp;r911188165f344657afb9eeaa1ae8998a=BERTAGNON%20MARIA%20LUISA&amp;r26540616401e4f999c44de10ddc004ee=BARBONA&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05505500289&amp;r1addcad129b44b3cb2220834a33335d5=nuovasalute%40virgilio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="antichi rimedi erboristeria di legnaro s imonetta badia polesine ro erboristeria 01060450291 legnarosimonetta69@gmail.com">
+    <p class="title">Antichi Rimedi Erboristeria Di Legnaro S imonetta</p>
+    <p class="meta">Badia Polesine (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Antichi%20Rimedi%20Erboristeria%20Di%20Legnaro%20S&amp;r911188165f344657afb9eeaa1ae8998a=imonetta&amp;r26540616401e4f999c44de10ddc004ee=Badia%20Polesine&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01060450291&amp;r1addcad129b44b3cb2220834a33335d5=legnarosimonetta69%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria alla salute di dengo vania borgoricco pd erboristeria 03757600287 erboristeriaallasalute@gmail.com">
+    <p class="title">Erboristeria Alla Salute Di Dengo Vania</p>
+    <p class="meta">Borgoricco (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Alla%20Salute%20Di%20Dengo%20Vania&amp;r26540616401e4f999c44de10ddc004ee=Borgoricco&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03757600287&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriaallasalute%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria le sorgenti di spinello paola cadoneghe pd erboristeria 02470510286 paolaerbo@alice.it">
+    <p class="title">ERBORISTERIA LE SORGENTI DI SPINELLO PAOLA</p>
+    <p class="meta">CADONEGHE (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=ERBORISTERIA%20LE%20SORGENTI%20DI%20SPINELLO&amp;r911188165f344657afb9eeaa1ae8998a=PAOLA&amp;r26540616401e4f999c44de10ddc004ee=CADONEGHE&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02470510286&amp;r1addcad129b44b3cb2220834a33335d5=paolaerbo%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="le due querce s.n.c. di lazzarin adriana cadoneghe pd altro 03912460288 leduequerce@gmail.com">
+    <p class="title">LE DUE QUERCE S.N.C. DI LAZZARIN ADRIANA</p>
+    <p class="meta">CADONEGHE (PD) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LE%20DUE%20QUERCE%20S.N.C.%20DI%20LAZZARIN%20ADRIANA&amp;r26540616401e4f999c44de10ddc004ee=CADONEGHE&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03912460288&amp;r1addcad129b44b3cb2220834a33335d5=LEDUEQUERCE%40GMAIL.COM&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria bottega della salute di lag cittadella pd erboristeria 02558480246 info@erboristeriabottegadellasalute.it">
+    <p class="title">ERBORISTERIA BOTTEGA DELLA SALUTE DI LAG</p>
+    <p class="meta">CITTADELLA (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=ERBORISTERIA%20BOTTEGA%20DELLA%20SALUTE%20DI%20LAG&amp;r26540616401e4f999c44de10ddc004ee=CITTADELLA&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02558480246&amp;r1addcad129b44b3cb2220834a33335d5=info%40erboristeriabottegadellasalute.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="gaia s.n.c. di cusinato giorgia cadoneghe pd erboristeria 03736130281 gaia-pd@libero.it">
+    <p class="title">Gaia S.n.c. Di Cusinato Giorgia</p>
+    <p class="meta">Cadoneghe (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Gaia%20S.n.c.%20Di%20Cusinato%20Giorgia&amp;r26540616401e4f999c44de10ddc004ee=Cadoneghe&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03736130281&amp;r1addcad129b44b3cb2220834a33335d5=gaia-pd%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria fior di loto campodarsego pd erboristeria 05429650285 fiordilotopd70@gmail.com">
+    <p class="title">Erboristeria Fior di loto</p>
+    <p class="meta">Campodarsego (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Fior%20di%20loto&amp;r26540616401e4f999c44de10ddc004ee=Campodarsego&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05429650285&amp;r1addcad129b44b3cb2220834a33335d5=fiordilotopd70%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria natura bio sas campodarsego pd erboristeria 04301640282 gloria.callepari@libero.it">
+    <p class="title">Erboristeria Natura Bio Sas</p>
+    <p class="meta">Campodarsego (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Natura%20Bio%20Sas&amp;r26540616401e4f999c44de10ddc004ee=Campodarsego&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04301640282&amp;r1addcad129b44b3cb2220834a33335d5=gloria.callepari%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria aloe di gallo tiziana camposampiero pd erboristeria 02263460285 aloetizzi@libero.it">
+    <p class="title">Erboristeria Aloe di Gallo Tiziana</p>
+    <p class="meta">Camposampiero (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Aloe%20di%20Gallo%20Tiziana&amp;r26540616401e4f999c44de10ddc004ee=Camposampiero&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02263460285&amp;r1addcad129b44b3cb2220834a33335d5=aloetizzi%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="asfodelo l&amp;#x27;erboristeria di dr.ssa locci grazianella carmignano di brenta pd erboristeria 02094500283 asfodelo.parafarmerb@tiscali.it">
+    <p class="title">Asfodelo L&#x27;Erboristeria di Dr.ssa Locci Grazianella</p>
+    <p class="meta">Carmignano Di Brenta (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Asfodelo%20L%27Erboristeria%20di%20Dr.ssa%20Locci&amp;r911188165f344657afb9eeaa1ae8998a=Grazianella&amp;r26540616401e4f999c44de10ddc004ee=Carmignano%20Di%20Brenta&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02094500283&amp;r1addcad129b44b3cb2220834a33335d5=asfodelo.parafarmerb%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria asfodelo di ro.ma snc carmignano di brenta pd erboristeria 05354960287 info@asfodelo.bio.it">
+    <p class="title">Erboristeria Asfodelo di RO.MA snc</p>
+    <p class="meta">Carmignano di Brenta (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Asfodelo%20di%20RO.MA%20snc&amp;r26540616401e4f999c44de10ddc004ee=Carmignano%20di%20Brenta&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05354960287&amp;r1addcad129b44b3cb2220834a33335d5=info%40asfodelo.bio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="bottega del bio di milani loredana cittadella pd erboristeria 03536440286 bottegadelbio@libero.it">
+    <p class="title">Bottega del bio di Milani Loredana</p>
+    <p class="meta">Cittadella (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Bottega%20del%20bio%20di%20Milani%20Loredana&amp;r26540616401e4f999c44de10ddc004ee=Cittadella&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03536440286&amp;r1addcad129b44b3cb2220834a33335d5=bottegadelbio%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="bios erboristeria di magagna antonella conselve pd erboristeria 04133320285 erboristeriabios@gmail.com">
+    <p class="title">Bios Erboristeria Di Magagna Antonella</p>
+    <p class="meta">Conselve (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Bios%20Erboristeria%20Di%20Magagna%20Antonella&amp;r26540616401e4f999c44de10ddc004ee=Conselve&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04133320285&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriabios%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;agrifoglio erboristeria di federica previato snc este pd erboristeria 01015280280 lagrifoglio.snc@gmail.com">
+    <p class="title">L&#x27;Agrifoglio erboristeria di Federica Previato snc</p>
+    <p class="meta">Este (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Agrifoglio%20erboristeria%20di%20Federica&amp;r911188165f344657afb9eeaa1ae8998a=Previato%20snc&amp;r26540616401e4f999c44de10ddc004ee=Este&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01015280280&amp;r1addcad129b44b3cb2220834a33335d5=lagrifoglio.snc%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;orto dei semplici dott.ssa ferrari paola este pd erboristeria 04061960284 paola_ferrarip@libero.it">
+    <p class="title">L&#x27;orto dei semplici dott.ssa Ferrari Paola</p>
+    <p class="meta">Este (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27orto%20dei%20semplici%20dott.ssa%20Ferrari&amp;r911188165f344657afb9eeaa1ae8998a=Paola&amp;r26540616401e4f999c44de10ddc004ee=Este&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04061960284&amp;r1addcad129b44b3cb2220834a33335d5=paola_ferrarip%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="madre natura di ramazzina sonia lendinara ro erboristeria 01234750295 negoziomadrenatura@libero.it">
+    <p class="title">Madre Natura Di Ramazzina Sonia</p>
+    <p class="meta">Lendinara (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Madre%20Natura%20Di%20Ramazzina%20Sonia&amp;r26540616401e4f999c44de10ddc004ee=Lendinara&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01234750295&amp;r1addcad129b44b3cb2220834a33335d5=negoziomadrenatura%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;alchimista di mazzucco marino massanzago pd erboristeria 03437570280 alchimista.md@libero.it">
+    <p class="title">L&#x27;Alchimista Di Mazzucco Marino</p>
+    <p class="meta">Massanzago (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Alchimista%20Di%20Mazzucco%20Marino&amp;r26540616401e4f999c44de10ddc004ee=Massanzago&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03437570280&amp;r1addcad129b44b3cb2220834a33335d5=alchimista.md%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;isola verde la magia delle erbe s.n.c. megliadino san fidenzio pd erboristeria 04850800287 isolamegliandino@tiscali.it">
+    <p class="title">L&#x27;isola Verde La Magia Delle Erbe S.n.c.</p>
+    <p class="meta">Megliadino San Fidenzio (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27isola%20Verde%20La%20Magia%20Delle%20Erbe%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Megliadino%20San%20Fidenzio&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04850800287&amp;r1addcad129b44b3cb2220834a33335d5=isolamegliandino%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria equilibrio naturale di vale ntina norbiato mestrino pd erboristeria 04778820284 info@erboristeriaequilibrionaturale.it">
+    <p class="title">Erboristeria Equilibrio Naturale di Vale ntina Norbiato</p>
+    <p class="meta">Mestrino (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Equilibrio%20Naturale%20di%20Vale&amp;r911188165f344657afb9eeaa1ae8998a=ntina%20Norbiato&amp;r26540616401e4f999c44de10ddc004ee=Mestrino&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04778820284&amp;r1addcad129b44b3cb2220834a33335d5=info%40erboristeriaequilibrionaturale.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="herbaria di tombari fabrizia monselice pd erboristeria 03974630281 fabrizia.tombari@gmail.com">
+    <p class="title">Herbaria Di Tombari Fabrizia</p>
+    <p class="meta">Monselice (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Herbaria%20Di%20Tombari%20Fabrizia&amp;r26540616401e4f999c44de10ddc004ee=Monselice&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03974630281&amp;r1addcad129b44b3cb2220834a33335d5=fabrizia.tombari%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria alice s.a.s. di de grandi a lice e c. montagnana pd erboristeria 04904210285 alicedegrandi@libero.it">
+    <p class="title">Erboristeria Alice S.a.s. Di De Grandi A lice E C.</p>
+    <p class="meta">Montagnana (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Alice%20S.a.s.%20Di%20De%20Grandi%20A&amp;r911188165f344657afb9eeaa1ae8998a=lice%20E%20C.&amp;r26540616401e4f999c44de10ddc004ee=Montagnana&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04904210285&amp;r1addcad129b44b3cb2220834a33335d5=alicedegrandi%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria matteotti di depoli luca montagnana pd erboristeria 03980740231 erblucadepoli@gmail.com">
+    <p class="title">Erboristeria Matteotti Di Depoli Luca</p>
+    <p class="meta">Montagnana (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Matteotti%20Di%20Depoli%20Luca&amp;r26540616401e4f999c44de10ddc004ee=Montagnana&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03980740231&amp;r1addcad129b44b3cb2220834a33335d5=erblucadepoli%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l’erbario di etenli cinzia erboristeria montagnana pd erboristeria 04387250246 erbario.cinzia@gmail.com">
+    <p class="title">L’erbario di Etenli Cinzia erboristeria</p>
+    <p class="meta">Montagnana (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%E2%80%99erbario%20di%20Etenli%20Cinzia%20erboristeria&amp;r26540616401e4f999c44de10ddc004ee=Montagnana&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04387250246&amp;r1addcad129b44b3cb2220834a33335d5=erbario.cinzia%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria iris s.a.s. di allegro anna &amp;amp; c. montegrotto terme pd erboristeria 03443840289 info@iriserboristeria.it">
+    <p class="title">Erboristeria Iris S.a.s. Di Allegro Anna &amp; C.</p>
+    <p class="meta">Montegrotto Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Iris%20S.a.s.%20Di%20Allegro%20Anna&amp;r911188165f344657afb9eeaa1ae8998a=%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Montegrotto%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03443840289&amp;r1addcad129b44b3cb2220834a33335d5=info%40iriserboristeria.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="mente e natura s.n.c. (padova - via tizi ano aspetti, 44) montegrotto terme pd erboristeria 04855530285 info@menteenatura.com">
+    <p class="title">Mente E Natura S.n.c. (Padova - Via Tizi ano Aspetti, 44)</p>
+    <p class="meta">Montegrotto Terme (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Mente%20E%20Natura%20S.n.c.%20%28Padova%20-%20Via%20Tizi&amp;r911188165f344657afb9eeaa1ae8998a=ano%20Aspetti%2C%2044%29&amp;r26540616401e4f999c44de10ddc004ee=Montegrotto%20Terme&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04855530285&amp;r1addcad129b44b3cb2220834a33335d5=info%40menteenatura.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ortopedia patavina s.r.l. padova pd sanitaria ortopedia 05567360283 info@sanitariaortopediapatavina.it">
+    <p class="title">SANITARIA ORTOPEDIA PATAVINA S.R.L.</p>
+    <p class="meta">PADOVA (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SANITARIA%20ORTOPEDIA%20PATAVINA%20S.R.L.&amp;r26540616401e4f999c44de10ddc004ee=PADOVA&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05567360283&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariaortopediapatavina.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la macina di rostellato denise e c. s.a. piove di sacco pd erboristeria 05687640283 ">
+    <p class="title">LA MACINA DI ROSTELLATO DENISE E C. S.A.</p>
+    <p class="meta">PIOVE DI SACCO (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LA%20MACINA%20DI%20ROSTELLATO%20DENISE%20E%20C.%20S.A.&amp;r26540616401e4f999c44de10ddc004ee=PIOVE%20DI%20SACCO&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05687640283&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="artiglio del diavolo di meneghesso anna padova pd erboristeria 03870270281 info@artigliodeldiavolo.it">
+    <p class="title">Artiglio Del Diavolo di Meneghesso Anna</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Artiglio%20Del%20Diavolo%20di%20Meneghesso%20Anna&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03870270281&amp;r1addcad129b44b3cb2220834a33335d5=info%40artigliodeldiavolo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="biosystem s.a.s. di pagliarin cristina &amp;amp; c. padova pd erboristeria 01401410285 cristinapagliarin@gmail.com">
+    <p class="title">Biosystem S.a.s. Di Pagliarin Cristina &amp; C.</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Biosystem%20S.a.s.%20Di%20Pagliarin%20Cristina%20%26&amp;r911188165f344657afb9eeaa1ae8998a=C.&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01401410285&amp;r1addcad129b44b3cb2220834a33335d5=cristinapagliarin%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="dott.ssa simonetta abelli padova pd professionista 03874160280 simonetta04@libero.it">
+    <p class="title">Dott.ssa Simonetta Abelli</p>
+    <p class="meta">Padova (PD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Dott.ssa%20Simonetta%20Abelli&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03874160280&amp;r1addcad129b44b3cb2220834a33335d5=simonetta04%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria alchimia di bortolotto moni ca padova pd erboristeria 04346440276 monicabortol8@gmail.com">
+    <p class="title">Erboristeria Alchimia di Bortolotto Moni ca</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Alchimia%20di%20Bortolotto%20Moni&amp;r911188165f344657afb9eeaa1ae8998a=ca&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04346440276&amp;r1addcad129b44b3cb2220834a33335d5=monicabortol8%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria dott.ssa valeria mognon di analemma s.a.s. di mognon valeria &amp;amp; c. padova pd erboristeria 05226360286 valeria.mognon@tiscali.it">
+    <p class="title">Erboristeria Dott.ssa Valeria Mognon di Analemma s.a.s. di Mognon Valeria &amp; C.</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Dott.ssa%20Valeria%20Mognon%20di&amp;r911188165f344657afb9eeaa1ae8998a=Analemma%20s.a.s.%20di%20Mognon%20Valeria%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05226360286&amp;r1addcad129b44b3cb2220834a33335d5=valeria.mognon%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria i germogli di bozzato anton ella padova pd erboristeria 05300770285 igermogli2006@libero.it">
+    <p class="title">Erboristeria I Germogli Di Bozzato Anton ella</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20I%20Germogli%20Di%20Bozzato%20Anton&amp;r911188165f344657afb9eeaa1ae8998a=ella&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05300770285&amp;r1addcad129b44b3cb2220834a33335d5=igermogli2006%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="il tiglio erboristeria di morassut sara padova pd erboristeria 01722640933 iltiglioerboristeria@gmail.com">
+    <p class="title">Il Tiglio Erboristeria Di Morassut Sara</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Il%20Tiglio%20Erboristeria%20Di%20Morassut%20Sara&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01722640933&amp;r1addcad129b44b3cb2220834a33335d5=iltiglioerboristeria%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;ape regina s.n.c. di bruno anna maria &amp;amp; gailli alessio padova pd erboristeria 03271460283 aperegina.pd@gmail.com">
+    <p class="title">L&#x27;Ape Regina S.n.c. Di Bruno Anna Maria &amp; Gailli Alessio</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Ape%20Regina%20S.n.c.%20Di%20Bruno%20Anna%20Maria&amp;r911188165f344657afb9eeaa1ae8998a=%26%20Gailli%20Alessio&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03271460283&amp;r1addcad129b44b3cb2220834a33335d5=aperegina.pd%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="naturalmente s.r.l. padova pd erboristeria 04130490289 info@erboristerianaturalmente.net">
+    <p class="title">Naturalmente S.r.l.</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Naturalmente%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04130490289&amp;r1addcad129b44b3cb2220834a33335d5=info%40erboristerianaturalmente.net&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="orthomedica s.r.l. padova pd sanitaria ortopedia 03570080287 info@orthomedica.it">
+    <p class="title">ORTHOMEDICA S.r.l.</p>
+    <p class="meta">Padova (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=ORTHOMEDICA%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03570080287&amp;r1addcad129b44b3cb2220834a33335d5=info%40orthomedica.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sacra famiglia erboristeria di barbara d ario padova pd erboristeria 04776760284 barbara_dario@libero.it">
+    <p class="title">Sacra Famiglia Erboristeria Di Barbara D ario</p>
+    <p class="meta">Padova (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sacra%20Famiglia%20Erboristeria%20Di%20Barbara%20D&amp;r911188165f344657afb9eeaa1ae8998a=ario&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04776760284&amp;r1addcad129b44b3cb2220834a33335d5=barbara_dario%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="shesau s.r.l. padova pd professionista 03656860289 ">
+    <p class="title">Shesau S.r.l.</p>
+    <p class="meta">Padova (PD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Shesau%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03656860289&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;angolo verde s.n.c. di crivellaro stef ano &amp;amp; c. piove di sacco pd erboristeria 02282260286 stefanocrive63@gmail.com">
+    <p class="title">L&#x27;Angolo Verde S.n.c. Di Crivellaro Stef ano &amp; C.</p>
+    <p class="meta">Piove Di Sacco (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Angolo%20Verde%20S.n.c.%20Di%20Crivellaro%20Stef&amp;r911188165f344657afb9eeaa1ae8998a=ano%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Piove%20Di%20Sacco&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02282260286&amp;r1addcad129b44b3cb2220834a33335d5=stefanocrive63%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="ayurveda center estetica di faccio anna maria polesella ro erboristeria 01099540294 eleonora-alt@hotmail.it">
+    <p class="title">Ayurveda Center Estetica di Faccio Anna Maria</p>
+    <p class="meta">Polesella (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Ayurveda%20Center%20Estetica%20di%20Faccio%20Anna&amp;r911188165f344657afb9eeaa1ae8998a=Maria&amp;r26540616401e4f999c44de10ddc004ee=Polesella&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01099540294&amp;r1addcad129b44b3cb2220834a33335d5=eleonora-alt%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="viemme s.r.l. ponte san nicoló pd altro 05503820283 padova2@naturasi.it">
+    <p class="title">Viemme S.r.l.</p>
+    <p class="meta">Ponte San Nicoló (PD) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Viemme%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Ponte%20San%20Nicol%C3%B3&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05503820283&amp;r1addcad129b44b3cb2220834a33335d5=padova2%40naturasi.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria verde idea porto viro ro erboristeria 01335820294 sara83degaspari@gmail.com">
+    <p class="title">Erboristeria Verde Idea</p>
+    <p class="meta">Porto Viro (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Verde%20Idea&amp;r26540616401e4f999c44de10ddc004ee=Porto%20Viro&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01335820294&amp;r1addcad129b44b3cb2220834a33335d5=sara83degaspari%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="il naturista di antonini patrizia porto viro ro erboristeria 00933690299 patrizia.antonini62@gmail.com">
+    <p class="title">Il Naturista Di Antonini Patrizia</p>
+    <p class="meta">Porto Viro (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Il%20Naturista%20Di%20Antonini%20Patrizia&amp;r26540616401e4f999c44de10ddc004ee=Porto%20Viro&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00933690299&amp;r1addcad129b44b3cb2220834a33335d5=patrizia.antonini62%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="alga marina di crivellari lucrezia rosolina ro erboristeria 01107500298 monja84@libero.it">
+    <p class="title">Alga Marina di Crivellari Lucrezia</p>
+    <p class="meta">Rosolina (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Alga%20Marina%20di%20Crivellari%20Lucrezia&amp;r26540616401e4f999c44de10ddc004ee=Rosolina&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01107500298&amp;r1addcad129b44b3cb2220834a33335d5=monja84%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria elisir s.n.c. di barbierato monica &amp;amp; c. rovigo ro erboristeria 01180650291 erbodaniele@hotmail.it">
+    <p class="title">Erboristeria Elisir S.n.c. Di Barbierato Monica &amp; C.</p>
+    <p class="meta">Rovigo (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Elisir%20S.n.c.%20Di%20Barbierato&amp;r911188165f344657afb9eeaa1ae8998a=Monica%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Rovigo&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01180650291&amp;r1addcad129b44b3cb2220834a33335d5=erbodaniele%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria l&amp;#x27;albero delle esperidi di lionello diego rovigo ro erboristeria 01063230294 ">
+    <p class="title">Erboristeria L&#x27;Albero Delle Esperidi di Lionello Diego</p>
+    <p class="meta">Rovigo (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20L%27Albero%20Delle%20Esperidi%20di&amp;r911188165f344657afb9eeaa1ae8998a=Lionello%20Diego&amp;r26540616401e4f999c44de10ddc004ee=Rovigo&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01063230294&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria rodigina di culati marinell a rovigo ro erboristeria 00787120294 erboristeriarodigina@libero.it">
+    <p class="title">Erboristeria Rodigina Di Culati Marinell a</p>
+    <p class="meta">Rovigo (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Rodigina%20Di%20Culati%20Marinell&amp;r911188165f344657afb9eeaa1ae8998a=a&amp;r26540616401e4f999c44de10ddc004ee=Rovigo&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00787120294&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriarodigina%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la bottega delle erbe di biolcati bruna e c. s.n.c. rovigo ro erboristeria 01248360297 erboristeriarovigo@gmail.com">
+    <p class="title">La Bottega Delle Erbe Di Biolcati Bruna E C. S.n.c.</p>
+    <p class="meta">Rovigo (RO) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Bottega%20Delle%20Erbe%20Di%20Biolcati%20Bruna&amp;r911188165f344657afb9eeaa1ae8998a=E%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Rovigo&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01248360297&amp;r1addcad129b44b3cb2220834a33335d5=erboristeriarovigo%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="montin oriella erboristeria solesino pd erboristeria 01344960289 oriellamontin@libero.it">
+    <p class="title">MONTIN ORIELLA ERBORISTERIA</p>
+    <p class="meta">SOLESINO (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=MONTIN%20ORIELLA&amp;r911188165f344657afb9eeaa1ae8998a=ERBORISTERIA&amp;r26540616401e4f999c44de10ddc004ee=SOLESINO&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01344960289&amp;r1addcad129b44b3cb2220834a33335d5=oriellamontin%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="all&amp;#x27;erbolaio s.n.c. di silvia lorenzin &amp;amp; c. san giorgio delle pertiche pd erboristeria 01497050284 silvialorenzin@gmail.com">
+    <p class="title">All&#x27;Erbolaio S.n.c. di Silvia Lorenzin &amp; C.</p>
+    <p class="meta">San Giorgio Delle Pertiche (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=All%27Erbolaio%20S.n.c.%20di%20Silvia%20Lorenzin%20%26&amp;r911188165f344657afb9eeaa1ae8998a=C.&amp;r26540616401e4f999c44de10ddc004ee=San%20Giorgio%20Delle%20Pertiche&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01497050284&amp;r1addcad129b44b3cb2220834a33335d5=silvialorenzin%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria la calendula di dott.ssa la ura fassina san giorgio in bosco pd erboristeria 04379870282 la_calendula@alice.it">
+    <p class="title">Erboristeria La Calendula Di Dott.ssa La ura Fassina</p>
+    <p class="meta">San Giorgio In Bosco (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20La%20Calendula%20Di%20Dott.ssa%20La&amp;r911188165f344657afb9eeaa1ae8998a=ura%20Fassina&amp;r26540616401e4f999c44de10ddc004ee=San%20Giorgio%20In%20Bosco&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04379870282&amp;r1addcad129b44b3cb2220834a33335d5=la_calendula%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;erbaverde s.r.l. san martino di lupari pd erboristeria 02321250280 ">
+    <p class="title">L&#x27;Erbaverde S.r.l.</p>
+    <p class="meta">San Martino Di Lupari (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Erbaverde%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=San%20Martino%20Di%20Lupari&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02321250280&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="dott.ssa denic sonja saonara pd professionista 03888160284 ">
+    <p class="title">Dott.ssa Denic Sonja</p>
+    <p class="meta">Saonara (PD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Dott.ssa%20Denic%20Sonja&amp;r26540616401e4f999c44de10ddc004ee=Saonara&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03888160284&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="l&amp;#x27;oasi del benessere saonara pd erboristeria 03705560286 ">
+    <p class="title">L&#x27;Oasi Del Benessere</p>
+    <p class="meta">Saonara (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=L%27Oasi%20Del%20Benessere&amp;r26540616401e4f999c44de10ddc004ee=Saonara&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03705560286&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="bresseo erboristeria di gomiero paola teolo pd erboristeria 05573870283 bresseoerboristeria@gmail.com">
+    <p class="title">Bresseo erboristeria di Gomiero Paola</p>
+    <p class="meta">Teolo (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Bresseo%20erboristeria%20di%20Gomiero%20Paola&amp;r26540616401e4f999c44de10ddc004ee=Teolo&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=05573870283&amp;r1addcad129b44b3cb2220834a33335d5=bresseoerboristeria%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria il fiordaliso di beghetto e lisa tombolo pd erboristeria 02434800286 fiordalisoelisa@libero.it">
+    <p class="title">Erboristeria Il Fiordaliso Di Beghetto E lisa</p>
+    <p class="meta">Tombolo (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20Il%20Fiordaliso%20Di%20Beghetto%20E&amp;r911188165f344657afb9eeaa1ae8998a=lisa&amp;r26540616401e4f999c44de10ddc004ee=Tombolo&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02434800286&amp;r1addcad129b44b3cb2220834a33335d5=fiordalisoelisa%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="romina callegarin villamarzana ro professionista 01595200294 rominacallegarin79@gmail.com">
+    <p class="title">Romina Callegarin</p>
+    <p class="meta">VILLAMARZANA (RO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Romina%20Callegarin&amp;r26540616401e4f999c44de10ddc004ee=VILLAMARZANA&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01595200294&amp;r1addcad129b44b3cb2220834a33335d5=rominacallegarin79%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria la finestra s.r.l. vigonovo ve erboristeria 04576800272 manubrun@hotmail.it">
+    <p class="title">Erboristeria La Finestra S.r.l.</p>
+    <p class="meta">Vigonovo (VE) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20La%20Finestra%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Vigonovo&amp;r8df9a2a8446640338ce40a1c53c513d7=VE&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04576800272&amp;r1addcad129b44b3cb2220834a33335d5=manubrun%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="erboristeria e sanitaria s.a.s. dott. gi ovanni simioni vigonza pd erboristeria 02563620281 alessandrasimioni@libero.it">
+    <p class="title">Erboristeria E Sanitaria S.a.s. Dott. Gi ovanni Simioni</p>
+    <p class="meta">Vigonza (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Erboristeria%20E%20Sanitaria%20S.a.s.%20Dott.%20Gi&amp;r911188165f344657afb9eeaa1ae8998a=ovanni%20Simioni&amp;r26540616401e4f999c44de10ddc004ee=Vigonza&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02563620281&amp;r1addcad129b44b3cb2220834a33335d5=alessandrasimioni%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="naturalmente erboristeria di ruffato oriana villanova di camposampiero pd erboristeria 02405950284 o.ruffato@alice.it">
+    <p class="title">Naturalmente Erboristeria di Ruffato Oriana</p>
+    <p class="meta">Villanova Di Camposampiero (PD) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Naturalmente%20Erboristeria%20di%20Ruffato&amp;r911188165f344657afb9eeaa1ae8998a=Oriana&amp;r26540616401e4f999c44de10ddc004ee=Villanova%20Di%20Camposampiero&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02405950284&amp;r1addcad129b44b3cb2220834a33335d5=o.ruffato%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Giacomin%20Maurizio" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FRANCO ROBBA • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>FRANCO ROBBA • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="sanitaria castello s.n.c. di bocchimpani ferrara fe  00833830383 ">
+    <p class="title">SANITARIA CASTELLO S.N.C. DI BOCCHIMPANI</p>
+    <p class="meta">FERRARA (FE)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SANITARIA%20CASTELLO%20S.N.C.%20DI%20BOCCHIMPANI&amp;r26540616401e4f999c44de10ddc004ee=FERRARA&amp;r8df9a2a8446640338ce40a1c53c513d7=FE&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00833830383&amp;r59bc1e759dc143c48cba2b322870aea3=FRANCO%20ROBBA" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>

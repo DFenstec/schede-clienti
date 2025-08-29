@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lucca Paolo • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>Lucca Paolo • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="dott fumarola nelson abano terme pd  04549220285 nelsonpersonal@outlook.it">
+    <p class="title">DOTT FUMAROLA NELSON</p>
+    <p class="meta">ABANO TERME (PD)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=DOTT%20FUMAROLA%20NELSON&amp;r26540616401e4f999c44de10ddc004ee=ABANO%20TERME&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04549220285&amp;r1addcad129b44b3cb2220834a33335d5=nelsonpersonal%40outlook.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="nicola la grotta bolzano bz professionista  nicola.lagrotta@alice.it">
+    <p class="title">Nicola La Grotta</p>
+    <p class="meta">Bolzano (BZ) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Nicola%20La%20Grotta&amp;r26540616401e4f999c44de10ddc004ee=Bolzano&amp;r8df9a2a8446640338ce40a1c53c513d7=BZ&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;r1addcad129b44b3cb2220834a33335d5=nicola.lagrotta%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la sanitaria di bassi maria luisa caprino veronese vr sanitaria ortopedia 04113600235 lasanitariacaprino@virgilio.it">
+    <p class="title">LA SANITARIA DI BASSI MARIA LUISA</p>
+    <p class="meta">CAPRINO VERONESE (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LA%20SANITARIA%20DI%20BASSI%20MARIA%20LUISA&amp;r26540616401e4f999c44de10ddc004ee=CAPRINO%20VERONESE&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04113600235&amp;r1addcad129b44b3cb2220834a33335d5=lasanitariacaprino%40virgilio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la sanitaria 1980 di ambroso alessandra cerea vr sanitaria ortopedia 04768520233 info@lasanitaria1980.it">
+    <p class="title">LA SANITARIA 1980 DI AMBROSO ALESSANDRA</p>
+    <p class="meta">CEREA (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LA%20SANITARIA%201980%20DI%20AMBROSO%20ALESSANDRA&amp;r26540616401e4f999c44de10ddc004ee=CEREA&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04768520233&amp;r1addcad129b44b3cb2220834a33335d5=info%40lasanitaria1980.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="ortopedia vimedical srl creazzo vi sanitaria ortopedia 03983440243 info@vimedical.it">
+    <p class="title">ORTOPEDIA VIMEDICAL SRL</p>
+    <p class="meta">CREAZZO (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=ORTOPEDIA%20VIMEDICAL%20SRL&amp;r26540616401e4f999c44de10ddc004ee=CREAZZO&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03983440243&amp;r1addcad129b44b3cb2220834a33335d5=info%40vimedical.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="benessere sanitaria e ortopedia di pette nuzzo emanuela campo san martino pd sanitaria ortopedia 04777340284 benesseresanitaria@gmail.com">
+    <p class="title">Benessere Sanitaria E Ortopedia Di Pette nuzzo Emanuela</p>
+    <p class="meta">Campo San Martino (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Benessere%20Sanitaria%20E%20Ortopedia%20Di%20Pette&amp;r911188165f344657afb9eeaa1ae8998a=nuzzo%20Emanuela&amp;r26540616401e4f999c44de10ddc004ee=Campo%20San%20Martino&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04777340284&amp;r1addcad129b44b3cb2220834a33335d5=benesseresanitaria%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="dott marchioro remo due carrare pd professionista 03785630280 remo.marchioro@gmail.com">
+    <p class="title">DOTT MARCHIORO REMO</p>
+    <p class="meta">DUE CARRARE (PD) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=DOTT%20MARCHIORO%20REMO&amp;r26540616401e4f999c44de10ddc004ee=DUE%20CARRARE&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03785630280&amp;r1addcad129b44b3cb2220834a33335d5=remo.marchioro%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="ortopedia pasetto di giarola giovanna (l aboratorio ortopedico) este pd sanitaria ortopedia 00073620288 giovannagiarola@virgilio.it">
+    <p class="title">Ortopedia Pasetto Di Giarola Giovanna (L aboratorio Ortopedico)</p>
+    <p class="meta">Este (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Ortopedia%20Pasetto%20Di%20Giarola%20Giovanna%20%28L&amp;r911188165f344657afb9eeaa1ae8998a=aboratorio%20Ortopedico%29&amp;r26540616401e4f999c44de10ddc004ee=Este&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00073620288&amp;r1addcad129b44b3cb2220834a33335d5=giovannagiarola%40virgilio.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="laboratori piazza s.r.l. guidizzolo mn altro 00264510207 francesca.piazza@laboratoripiazza.it">
+    <p class="title">LABORATORI PIAZZA S.R.L.</p>
+    <p class="meta">GUIDIZZOLO (MN) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LABORATORI%20PIAZZA%20S.R.L.&amp;r26540616401e4f999c44de10ddc004ee=GUIDIZZOLO&amp;r8df9a2a8446640338ce40a1c53c513d7=MN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00264510207&amp;r1addcad129b44b3cb2220834a33335d5=francesca.piazza%40laboratoripiazza.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="medisan srl legnago vr sanitaria ortopedia 02486650233 sanitariamedisan@tiscali.it">
+    <p class="title">MEDISAN SRL</p>
+    <p class="meta">LEGNAGO (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=MEDISAN%20SRL&amp;r26540616401e4f999c44de10ddc004ee=LEGNAGO&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02486650233&amp;r1addcad129b44b3cb2220834a33335d5=sanitariamedisan%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitas di mai cristina legnago vr sanitaria ortopedia 04177110238 sanitas.ortopedici@tiscali.it">
+    <p class="title">SANITAS DI MAI CRISTINA</p>
+    <p class="meta">LEGNAGO (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SANITAS%20DI%20MAI%20CRISTINA&amp;r26540616401e4f999c44de10ddc004ee=LEGNAGO&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04177110238&amp;r1addcad129b44b3cb2220834a33335d5=sanitas.ortopedici%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria zoccarato di zoccarato walter limena pd sanitaria ortopedia 03799310283 sanitaria.limena@gmail.com">
+    <p class="title">Sanitaria Zoccarato Di Zoccarato Walter</p>
+    <p class="meta">Limena (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Zoccarato%20Di%20Zoccarato%20Walter&amp;r26540616401e4f999c44de10ddc004ee=Limena&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03799310283&amp;r1addcad129b44b3cb2220834a33335d5=sanitaria.limena%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="ortopedica scaligera srl lugagnano di sona vr sanitaria ortopedia 02819300233 verona@shop-salute.com">
+    <p class="title">Ortopedica Scaligera Srl</p>
+    <p class="meta">Lugagnano di Sona (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Ortopedica%20Scaligera%20Srl&amp;r26540616401e4f999c44de10ddc004ee=Lugagnano%20di%20Sona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02819300233&amp;r1addcad129b44b3cb2220834a33335d5=verona%40shop-salute.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="lab-or san s.n.c laborsan snc di luisetto e rusin padova pd sanitaria ortopedia 02120460288 laborsan@ymail.com">
+    <p class="title">LAB-OR SAN S.N.C LABORSAN SNC DI LUISETTO E RUSIN</p>
+    <p class="meta">PADOVA (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LAB-OR%20SAN%20S.N.C&amp;r911188165f344657afb9eeaa1ae8998a=LABORSAN%20SNC%20DI%20LUISETTO%20E%20RUSIN&amp;r26540616401e4f999c44de10ddc004ee=PADOVA&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02120460288&amp;r1addcad129b44b3cb2220834a33335d5=laborsan%40ymail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="lab-or-s.r.l laboratorio ortopedico padova pd sanitaria ortopedia 00207690280 info@ortopedia-labor.com">
+    <p class="title">LAB-OR-S.R.L LABORATORIO ORTOPEDICO</p>
+    <p class="meta">PADOVA (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LAB-OR-S.R.L%20LABORATORIO%20ORTOPEDICO&amp;r26540616401e4f999c44de10ddc004ee=PADOVA&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00207690280&amp;r1addcad129b44b3cb2220834a33335d5=info%40ortopedia-labor.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="lagosano di piazza paolo e luca s.n.c. peschiera del garda vr sanitaria ortopedia 03630770232 paolario@alice.it">
+    <p class="title">LAGOSANO DI PIAZZA PAOLO E LUCA S.N.C.</p>
+    <p class="meta">PESCHIERA DEL GARDA (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=LAGOSANO%20DI%20PIAZZA%20PAOLO%20E%20LUCA%20S.N.C.&amp;r26540616401e4f999c44de10ddc004ee=PESCHIERA%20DEL%20GARDA&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03630770232&amp;r1addcad129b44b3cb2220834a33335d5=paolario%40alice.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ortopedia crivellaro padova pd sanitaria ortopedia 04236360279 info@sanitariacrivellaro.it">
+    <p class="title">Sanitaria Ortopedia Crivellaro</p>
+    <p class="meta">Padova (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Ortopedia%20Crivellaro&amp;r26540616401e4f999c44de10ddc004ee=Padova&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04236360279&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariacrivellaro.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria san rocco s.r.l. piove di sacco pd sanitaria ortopedia 04227800283 sanitariasanrocco@gmail.com">
+    <p class="title">Sanitaria San Rocco S.r.l.</p>
+    <p class="meta">Piove Di Sacco (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20San%20Rocco%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Piove%20Di%20Sacco&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04227800283&amp;r1addcad129b44b3cb2220834a33335d5=sanitariasanrocco%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ezzelina di girardi barbara romano d&amp;#x27;ezzelino vi sanitaria ortopedia 03714930249 info@sanitariaezzelina.it">
+    <p class="title">Sanitaria Ezzelina Di Girardi Barbara</p>
+    <p class="meta">Romano D&#x27;ezzelino (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Ezzelina%20Di%20Girardi%20Barbara&amp;r26540616401e4f999c44de10ddc004ee=Romano%20D%27ezzelino&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03714930249&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariaezzelina.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria centrale ortopedia srl sandrigo vi sanitaria ortopedia 02079240244 sanitaria@benesseredelpiede.com">
+    <p class="title">SANITARIA CENTRALE ORTOPEDIA SRL</p>
+    <p class="meta">SANDRIGO (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SANITARIA%20CENTRALE%20ORTOPEDIA%20SRL&amp;r26540616401e4f999c44de10ddc004ee=SANDRIGO&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02079240244&amp;r1addcad129b44b3cb2220834a33335d5=sanitaria%40benesseredelpiede.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la sanitaria sas di ferro valeria &amp;amp; c. san bonifacio vr sanitaria ortopedia 00808180236 stefania@lasanitaria.com">
+    <p class="title">La Sanitaria Sas di Ferro Valeria &amp; C.</p>
+    <p class="meta">San Bonifacio (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Sanitaria%20Sas%20di%20Ferro%20Valeria%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=San%20Bonifacio&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00808180236&amp;r1addcad129b44b3cb2220834a33335d5=stefania%40lasanitaria.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ortopedia salute &amp;amp; bellezza di nicoletto luisa santa maria maddalena ro sanitaria ortopedia 01309610291 info@sanitariaocchiobello.it">
+    <p class="title">Sanitaria Ortopedia Salute &amp; Bellezza Di Nicoletto Luisa</p>
+    <p class="meta">Santa Maria Maddalena (RO) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Ortopedia%20Salute%20%26%20Bellezza%20Di&amp;r911188165f344657afb9eeaa1ae8998a=Nicoletto%20Luisa&amp;r26540616401e4f999c44de10ddc004ee=Santa%20Maria%20Maddalena&amp;r8df9a2a8446640338ce40a1c53c513d7=RO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01309610291&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariaocchiobello.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la sanitaria 1978 s.n.c. di manola danieli sarmeola di rubano pd sanitaria ortopedia 00766360283 manola@lasanitaria.eu">
+    <p class="title">La Sanitaria 1978 S.N.C. di Manola Danieli</p>
+    <p class="meta">Sarmeola Di Rubano (PD) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20Sanitaria%201978%20S.N.C.%20di%20Manola&amp;r911188165f344657afb9eeaa1ae8998a=Danieli&amp;r26540616401e4f999c44de10ddc004ee=Sarmeola%20Di%20Rubano&amp;r8df9a2a8446640338ce40a1c53c513d7=PD&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00766360283&amp;r1addcad129b44b3cb2220834a33335d5=manola%40lasanitaria.eu&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="scortegagna thomas schio vi professionista 04232640245 thomas.scortegagna@tiscali.it">
+    <p class="title">SCORTEGAGNA THOMAS</p>
+    <p class="meta">Schio (VI) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SCORTEGAGNA%20THOMAS&amp;r26540616401e4f999c44de10ddc004ee=Schio&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04232640245&amp;r1addcad129b44b3cb2220834a33335d5=thomas.scortegagna%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ortopedia campo romano schio vi sanitaria ortopedia 03549780249 info@sanitariacamporomano.com">
+    <p class="title">Sanitaria Ortopedia Campo Romano</p>
+    <p class="meta">Schio (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Ortopedia%20Campo%20Romano&amp;r26540616401e4f999c44de10ddc004ee=Schio&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03549780249&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariacamporomano.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="3 g veneta s.n.c. di galvanetto luca &amp;amp; c torri di quartesolo vi altro 02241810247 tregveneta@gmail.com">
+    <p class="title">3 G VENETA S.N.C. DI GALVANETTO LUCA &amp; C</p>
+    <p class="meta">TORRI DI QUARTESOLO (VI) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=3%20G%20VENETA%20S.N.C.%20DI%20GALVANETTO%20LUCA%20%26%20C&amp;r26540616401e4f999c44de10ddc004ee=TORRI%20DI%20QUARTESOLO&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02241810247&amp;r1addcad129b44b3cb2220834a33335d5=tregveneta%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="zoomsanitaria di alberto masè tione di trento tn sanitaria ortopedia 02692300227 zoomsanitaria@gmail.com">
+    <p class="title">Zoomsanitaria di Alberto Masè</p>
+    <p class="meta">Tione di Trento (TN) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Zoomsanitaria&amp;r911188165f344657afb9eeaa1ae8998a=di%20Alberto%20Mas%C3%A8&amp;r26540616401e4f999c44de10ddc004ee=Tione%20di%20Trento&amp;r8df9a2a8446640338ce40a1c53c513d7=TN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02692300227&amp;r1addcad129b44b3cb2220834a33335d5=zoomsanitaria%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sole e luna snc di vanoni lara e marina valleggio sul mincio vr sanitaria ortopedia 03809640232 soleluna.sanitaria@libero.it">
+    <p class="title">SOLE E LUNA SNC DI VANONI LARA E MARINA</p>
+    <p class="meta">VALLEGGIO SUL MINCIO (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SOLE%20E%20LUNA%20SNC%20DI%20VANONI%20LARA%20E%20MARINA&amp;r26540616401e4f999c44de10ddc004ee=VALLEGGIO%20SUL%20MINCIO&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03809640232&amp;r1addcad129b44b3cb2220834a33335d5=soleluna.sanitaria%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria elena sas di turato elena &amp;amp;c sanitaria elena verona vr sanitaria ortopedia 02612410239 sanitariaelena@gmail.com">
+    <p class="title">SANITARIA ELENA SAS DI TURATO ELENA &amp;C SANITARIA ELENA</p>
+    <p class="meta">VERONA (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=SANITARIA%20ELENA%20SAS%20DI%20TURATO%20ELENA%20%26C&amp;r911188165f344657afb9eeaa1ae8998a=SANITARIA%20ELENA&amp;r26540616401e4f999c44de10ddc004ee=VERONA&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02612410239&amp;r1addcad129b44b3cb2220834a33335d5=sanitariaelena%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sanitaria ponza valdagno vi sanitaria ortopedia 03657270249 info@sanitariaponza.it">
+    <p class="title">Sanitaria Ponza</p>
+    <p class="meta">Valdagno (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sanitaria%20Ponza&amp;r26540616401e4f999c44de10ddc004ee=Valdagno&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03657270249&amp;r1addcad129b44b3cb2220834a33335d5=info%40sanitariaponza.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="giovanni corato dei dott. vittorio e rob erto corato s.a.s. verona vr sanitaria ortopedia 00470970237 corato@supernet.it">
+    <p class="title">Giovanni Corato Dei Dott. Vittorio E Rob erto Corato S.a.s.</p>
+    <p class="meta">Verona (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Giovanni%20Corato%20Dei%20Dott.%20Vittorio%20E%20Rob&amp;r911188165f344657afb9eeaa1ae8998a=erto%20Corato%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00470970237&amp;r1addcad129b44b3cb2220834a33335d5=corato%40supernet.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="il point s.r.l. verona vr sanitaria ortopedia 02975690237 ilpointvr@ilpoint.it">
+    <p class="title">Il Point S.r.l.</p>
+    <p class="meta">Verona (VR) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Il%20Point%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02975690237&amp;r1addcad129b44b3cb2220834a33335d5=ilpointvr%40ilpoint.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="beni s.r.l. vicenza vi sanitaria ortopedia 02627240241 info@benivicenza.it">
+    <p class="title">Beni S.r.l.</p>
+    <p class="meta">Vicenza (VI) • Sanitaria Ortopedia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Beni%20S.r.l.&amp;r26540616401e4f999c44de10ddc004ee=Vicenza&amp;r8df9a2a8446640338ce40a1c53c513d7=VI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Sanitaria%20Ortopedia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02627240241&amp;r1addcad129b44b3cb2220834a33335d5=info%40benivicenza.it&amp;r59bc1e759dc143c48cba2b322870aea3=Lucca%20Paolo" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>

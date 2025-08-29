@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Andreoli Federico • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>Andreoli Federico • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="brandoli mariano bastiglia mo professionista 03161580364 marianobrandoli@libero.it">
+    <p class="title">BRANDOLI MARIANO</p>
+    <p class="meta">BASTIGLIA (MO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=BRANDOLI%20MARIANO&amp;r26540616401e4f999c44de10ddc004ee=BASTIGLIA&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03161580364&amp;r1addcad129b44b3cb2220834a33335d5=marianobrandoli%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="decla farmacie s.n.c. del dott. caramasc carpi mo  03585290368 farmaciasangiuseppe@libero.it">
+    <p class="title">DECLA FARMACIE S.N.C. DEL DOTT. CARAMASC</p>
+    <p class="meta">CARPI (MO)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=DECLA%20FARMACIE%20S.N.C.%20DEL%20DOTT.%20CARAMASC&amp;r26540616401e4f999c44de10ddc004ee=CARPI&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03585290368&amp;r1addcad129b44b3cb2220834a33335d5=farmaciasangiuseppe%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="monica modenese dottoressa carpi mo professionista  modenese.monica@hotmail.it">
+    <p class="title">Monica Modenese Dottoressa</p>
+    <p class="meta">Carpi (MO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Monica%20Modenese&amp;r911188165f344657afb9eeaa1ae8998a=Dottoressa&amp;r26540616401e4f999c44de10ddc004ee=Carpi&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;r1addcad129b44b3cb2220834a33335d5=modenese.monica%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="gabriele minì dott. formigine mo  03606740367 gabriele.podologia@gmail.clom">
+    <p class="title">Gabriele Minì Dott.</p>
+    <p class="meta">Formigine (MO)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Gabriele%20Min%C3%AC&amp;r911188165f344657afb9eeaa1ae8998a=Dott.&amp;r26540616401e4f999c44de10ddc004ee=Formigine&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03606740367&amp;r1addcad129b44b3cb2220834a33335d5=Gabriele.podologia%40gmail.clom&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="il germoglio e la quercia benessere di schillaci sonja formigine mo professionista 03988350363 qi74@libero.it">
+    <p class="title">Il germoglio e la quercia benessere Di Schillaci Sonja</p>
+    <p class="meta">Formigine (MO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Il%20germoglio%20e%20la%20quercia%20benessere&amp;r911188165f344657afb9eeaa1ae8998a=Di%20Schillaci%20Sonja&amp;r26540616401e4f999c44de10ddc004ee=Formigine&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03988350363&amp;r1addcad129b44b3cb2220834a33335d5=qi74%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="puccini andrea lama mocogno mo professionista 03245670363 pucciniandrea75@gmail.com">
+    <p class="title">Puccini Andrea</p>
+    <p class="meta">Lama Mocogno (MO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Puccini%20Andrea&amp;r26540616401e4f999c44de10ddc004ee=Lama%20Mocogno&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03245670363&amp;r1addcad129b44b3cb2220834a33335d5=pucciniandrea75%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia bernasconi di fontanesi dr. fed modena mo  02329550368 info@farmaciabernasconi.it">
+    <p class="title">FARMACIA BERNASCONI DI FONTANESI DR. FED</p>
+    <p class="meta">MODENA (MO)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=FARMACIA%20BERNASCONI%20DI%20FONTANESI%20DR.%20FED&amp;r26540616401e4f999c44de10ddc004ee=MODENA&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02329550368&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciabernasconi.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia galilei s.n.c. modena mo farmacia 03699040360 info@farmaciagalilei.it">
+    <p class="title">Farmacia Galilei S.n.c.</p>
+    <p class="meta">Modena (MO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Galilei%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Modena&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03699040360&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciagalilei.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="maria scarano dottoressa modena mo  03795980360 scaranomaria75@yahoo.it">
+    <p class="title">Maria Scarano Dottoressa</p>
+    <p class="meta">Modena (MO)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Maria%20Scarano&amp;r911188165f344657afb9eeaa1ae8998a=Dottoressa&amp;r26540616401e4f999c44de10ddc004ee=Modena&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03795980360&amp;r1addcad129b44b3cb2220834a33335d5=scaranomaria75%40yahoo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="benefix srl nonantola mo altro 02731070369 amministrazione@benefix.it">
+    <p class="title">BENEFIX srl</p>
+    <p class="meta">Nonantola (MO) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=BENEFIX%20srl&amp;r26540616401e4f999c44de10ddc004ee=Nonantola&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02731070369&amp;r1addcad129b44b3cb2220834a33335d5=amministrazione%40benefix.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="francesca seidenari dottoressa novi di modena mo altro 02881410365 dottfrancescaseidenari@gmail.com">
+    <p class="title">Francesca Seidenari Dottoressa</p>
+    <p class="meta">Novi di Modena (MO) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Francesca%20Seidenari&amp;r911188165f344657afb9eeaa1ae8998a=Dottoressa&amp;r26540616401e4f999c44de10ddc004ee=Novi%20di%20Modena&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02881410365&amp;r1addcad129b44b3cb2220834a33335d5=dottfrancescaseidenari%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="cosmesi natura di anastasi adelina reggio emilia re  01528420357 cosmesinatura.re@gmail.com">
+    <p class="title">COSMESI NATURA DI ANASTASI ADELINA</p>
+    <p class="meta">REGGIO EMILIA (RE)</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=COSMESI%20NATURA%20DI%20ANASTASI%20ADELINA&amp;r26540616401e4f999c44de10ddc004ee=REGGIO%20EMILIA&amp;r8df9a2a8446640338ce40a1c53c513d7=RE&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01528420357&amp;r1addcad129b44b3cb2220834a33335d5=cosmesinatura.re%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="gh dinamic fitness reggio emilia re altro 02989310350 hinek.gianni.gh@gmail.com">
+    <p class="title">GH Dinamic Fitness</p>
+    <p class="meta">Reggio Emilia (RE) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=GH%20Dinamic%20Fitness&amp;r26540616401e4f999c44de10ddc004ee=Reggio%20Emilia&amp;r8df9a2a8446640338ce40a1c53c513d7=RE&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02989310350&amp;r1addcad129b44b3cb2220834a33335d5=hinek.gianni.gh%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="la via delle api erboristeria reggio emilia re erboristeria 02923780353 laviadelleapi@gmail.com">
+    <p class="title">La via delle api Erboristeria</p>
+    <p class="meta">Reggio Emilia (RE) • Erboristeria</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=La%20via%20delle%20api&amp;r911188165f344657afb9eeaa1ae8998a=Erboristeria&amp;r26540616401e4f999c44de10ddc004ee=Reggio%20Emilia&amp;r8df9a2a8446640338ce40a1c53c513d7=RE&amp;rbafce5adc91849a2a8e7921033a3f0d3=Erboristeria&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02923780353&amp;r1addcad129b44b3cb2220834a33335d5=laviadelleapi%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="labanti patrizia reggio emilia re professionista 02791610351 patrizialabanti@gmail.com">
+    <p class="title">Labanti Patrizia</p>
+    <p class="meta">Reggio Emilia (RE) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Labanti%20Patrizia&amp;r26540616401e4f999c44de10ddc004ee=Reggio%20Emilia&amp;r8df9a2a8446640338ce40a1c53c513d7=RE&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02791610351&amp;r1addcad129b44b3cb2220834a33335d5=patrizialabanti%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="manuela ganapini reggio emilio re altro  manu.ganapini@gmail.com">
+    <p class="title">Manuela Ganapini</p>
+    <p class="meta">Reggio Emilio (RE) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Manuela%20Ganapini&amp;r26540616401e4f999c44de10ddc004ee=Reggio%20Emilio&amp;r8df9a2a8446640338ce40a1c53c513d7=RE&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;r1addcad129b44b3cb2220834a33335d5=manu.ganapini%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="chiara ghinatti osteopata san prospero mo professionista 03866090362 chiara.ghinatti@gmail.com">
+    <p class="title">Chiara Ghinatti Osteopata</p>
+    <p class="meta">San Prospero (MO) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Chiara%20Ghinatti&amp;r911188165f344657afb9eeaa1ae8998a=Osteopata&amp;r26540616401e4f999c44de10ddc004ee=San%20Prospero&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03866090362&amp;r1addcad129b44b3cb2220834a33335d5=chiara.ghinatti%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="iattici luca santarcangelo di romagna rn professionista 03675230365 iatticiluca@hotmail.it">
+    <p class="title">Iattici Luca</p>
+    <p class="meta">Santarcangelo di Romagna (RN) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Iattici%20Luca&amp;r26540616401e4f999c44de10ddc004ee=Santarcangelo%20di%20Romagna&amp;r8df9a2a8446640338ce40a1c53c513d7=RN&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03675230365&amp;r1addcad129b44b3cb2220834a33335d5=iatticiluca%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="sala pietro sassuolo mo altro  messorisimonetta91@gmail.com">
+    <p class="title">Sala Pietro</p>
+    <p class="meta">Sassuolo (MO) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Sala%20Pietro&amp;r26540616401e4f999c44de10ddc004ee=Sassuolo&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;r1addcad129b44b3cb2220834a33335d5=messorisimonetta91%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="martina valsega sesto fiorentino fi altro 07392450487 marty220306@hotmail.it">
+    <p class="title">Martina Valsega</p>
+    <p class="meta">Sesto Fiorentino (FI) • Altro</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Martina%20Valsega&amp;r26540616401e4f999c44de10ddc004ee=Sesto%20Fiorentino&amp;r8df9a2a8446640338ce40a1c53c513d7=FI&amp;rbafce5adc91849a2a8e7921033a3f0d3=Altro&amp;rbcd585b65b4a4b44861c691e6a7bdce1=07392450487&amp;r1addcad129b44b3cb2220834a33335d5=marty220306%40hotmail.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia comunale soliera soliera mo farmacia 00221720360 farmacia@comune.soliera.mo.it">
+    <p class="title">Farmacia Comunale Soliera</p>
+    <p class="meta">Soliera (MO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Comunale%20Soliera&amp;r26540616401e4f999c44de10ddc004ee=Soliera&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00221720360&amp;r1addcad129b44b3cb2220834a33335d5=farmacia%40comune.soliera.mo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia fondo bosco dott. barani walter spilamberto mo farmacia 01589760360 farmaciafondobosco@libero.it">
+    <p class="title">Farmacia Fondo Bosco Dott. Barani Walter</p>
+    <p class="meta">Spilamberto (MO) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Fondo%20Bosco%20Dott.%20Barani%20Walter&amp;r26540616401e4f999c44de10ddc004ee=Spilamberto&amp;r8df9a2a8446640338ce40a1c53c513d7=MO&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01589760360&amp;r1addcad129b44b3cb2220834a33335d5=farmaciafondobosco%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="laetitia bianco - dolce casa service vins sur caramy   fr68432719573 laetitiabianco@live.fr">
+    <p class="title">Laetitia Bianco - Dolce Casa Service</p>
+    <p class="meta">Vins sur Caramy</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Laetitia%20Bianco%20-%20Dolce%20Casa%20Service&amp;r26540616401e4f999c44de10ddc004ee=Vins%20sur%20Caramy&amp;rbcd585b65b4a4b44861c691e6a7bdce1=68432719573&amp;r1addcad129b44b3cb2220834a33335d5=laetitiabianco%40live.fr&amp;r59bc1e759dc143c48cba2b322870aea3=Andreoli%20Federico" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>

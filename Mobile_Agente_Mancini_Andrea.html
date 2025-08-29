@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mancini Andrea • Punti vendita</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; margin: 0; background:#f7f7f8; }
+  header { background:#0f172a; color:#fff; padding:16px 20px; }
+  h1 { font-size:20px; margin:0; }
+  .wrap { padding:16px; max-width:900px; margin:0 auto; }
+  .search { margin-bottom:12px; }
+  .search input { width:100%; font-size:16px; padding:12px 14px; border:1px solid #e5e7eb; border-radius:10px; }
+  .card { background:#fff; border:1px solid #e5e7eb; border-radius:12px; padding:14px; margin-bottom:12px; }
+  .title { font-size:16px; font-weight:600; margin:0 0 6px; }
+  .meta { color:#475569; font-size:14px; margin:0 0 10px; }
+  .btn { display:block; text-align:center; padding:12px 14px; border-radius:10px; border:1px solid #0f172a; text-decoration:none; }
+  .btn:active { transform: scale(0.99); }
+</style>
+<script>
+  function filterList() {
+    const q = document.getElementById('q').value.toLowerCase();
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-text');
+      c.style.display = t.includes(q) ? '' : 'none';
+    });
+  }
+</script>
+</head>
+<body>
+<header><h1>Mancini Andrea • Punti vendita</h1></header>
+<div class="wrap">
+  <div class="search"><input id="q" placeholder="Cerca per nome, comune o tipologia" oninput="filterList()"></div>
+  <div class="card" data-text="farmacia giusti s.a.s. dott.ssa sabrina albaredo d&amp;#x27;adige vr farmacia 04524160233 info@farmagiusti.it">
+    <p class="title">Farmacia Giusti S.a.s. dott.ssa Sabrina</p>
+    <p class="meta">Albaredo D&#x27;adige (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Giusti%20S.a.s.%20dott.ssa%20Sabrina&amp;r26540616401e4f999c44de10ddc004ee=Albaredo%20D%27adige&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04524160233&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmagiusti.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia dott. mauro segala e c. snc angiari vr farmacia 03324200231 ">
+    <p class="title">Farmacia Dott. Mauro Segala e C. Snc</p>
+    <p class="meta">Angiari (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Dott.%20Mauro%20Segala%20e%20C.%20Snc&amp;r26540616401e4f999c44de10ddc004ee=Angiari&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03324200231&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia gazzolo (farmacia comunale arco le s.p.a.) arcole vr farmacia 03271990230 farcospa@gmail.com">
+    <p class="title">Farmacia Gazzolo (Farmacia Comunale Arco le S.p.a.)</p>
+    <p class="meta">Arcole (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Gazzolo%20%28Farmacia%20Comunale%20Arco&amp;r911188165f344657afb9eeaa1ae8998a=le%20S.p.a.%29&amp;r26540616401e4f999c44de10ddc004ee=Arcole&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03271990230&amp;r1addcad129b44b3cb2220834a33335d5=farcospa%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia zorzi snc arcole vr farmacia 04372920233 info@farmaciazorzi.com">
+    <p class="title">Farmacia Zorzi snc</p>
+    <p class="meta">Arcole (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Zorzi%20snc&amp;r26540616401e4f999c44de10ddc004ee=Arcole&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04372920233&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciazorzi.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia san nicolò dott.ssa alessan dra lamparelli bardolino vr parafarmacia 04218870238 ">
+    <p class="title">Parafarmacia San Nicolò Dott.ssa Alessan dra Lamparelli</p>
+    <p class="meta">Bardolino (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20San%20Nicol%C3%B2%20Dott.ssa%20Alessan&amp;r911188165f344657afb9eeaa1ae8998a=dra%20Lamparelli&amp;r26540616401e4f999c44de10ddc004ee=Bardolino&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04218870238&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia centrale piazzoni antonella bussolengo vr farmacia 02907400234 farmaciapiazzoni@libero.it">
+    <p class="title">Farmacia Centrale Piazzoni Antonella</p>
+    <p class="meta">Bussolengo (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Centrale%20Piazzoni%20Antonella&amp;r26540616401e4f999c44de10ddc004ee=Bussolengo&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02907400234&amp;r1addcad129b44b3cb2220834a33335d5=farmaciapiazzoni%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia antiche terme di caldiero s.n.c . caldiero vr farmacia 02455710232 farmacia.anticheterme@gmail.com">
+    <p class="title">Farmacia Antiche Terme Di Caldiero S.n.c .</p>
+    <p class="meta">Caldiero (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Antiche%20Terme%20Di%20Caldiero%20S.n.c&amp;r911188165f344657afb9eeaa1ae8998a=.&amp;r26540616401e4f999c44de10ddc004ee=Caldiero&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02455710232&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.anticheterme%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia santa teresa dott. trespidi gae tano caselle vr farmacia 00696460237 farmacia.trespidi@libero.it">
+    <p class="title">Farmacia Santa Teresa Dott. Trespidi Gae tano</p>
+    <p class="meta">Caselle (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Santa%20Teresa%20Dott.%20Trespidi%20Gae&amp;r911188165f344657afb9eeaa1ae8998a=tano&amp;r26540616401e4f999c44de10ddc004ee=Caselle&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=00696460237&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.trespidi%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia all&amp;#x27;adige s.n.c. cavaion veronese vr farmacia 04657580231 farmacia.adige@gmail.com">
+    <p class="title">Farmacia All&#x27;Adige S.n.c.</p>
+    <p class="meta">Cavaion Veronese (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20All%27Adige%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Cavaion%20Veronese&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04657580231&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.adige%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia naturè s.n.c. di marabese g iulia &amp;amp; mori erica cerea vr parafarmacia 04203680238 nature.parafarmacia@gmail.com">
+    <p class="title">Parafarmacia Naturè S.n.c. Di Marabese G iulia &amp; Mori Erica</p>
+    <p class="meta">Cerea (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Natur%C3%A8%20S.n.c.%20Di%20Marabese%20G&amp;r911188165f344657afb9eeaa1ae8998a=iulia%20%26%20Mori%20Erica&amp;r26540616401e4f999c44de10ddc004ee=Cerea&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04203680238&amp;r1addcad129b44b3cb2220834a33335d5=nature.parafarmacia%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia martelletto di martelletto gaet ano e c. snc colognola ai colli vr farmacia 02451330233 info@farmaciamartelletto.it">
+    <p class="title">Farmacia Martelletto di Martelletto Gaet ano e C. snc</p>
+    <p class="meta">Colognola Ai Colli (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Martelletto%20di%20Martelletto%20Gaet&amp;r911188165f344657afb9eeaa1ae8998a=ano%20e%20C.%20snc&amp;r26540616401e4f999c44de10ddc004ee=Colognola%20Ai%20Colli&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02451330233&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciamartelletto.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia bocchi legnago vr farmacia 01270160235 farmacia.bocchi@libero.it">
+    <p class="title">Farmacia Bocchi</p>
+    <p class="meta">Legnago (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Bocchi&amp;r26540616401e4f999c44de10ddc004ee=Legnago&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01270160235&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.bocchi%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia marchetto della dott.essa martina bianchetto legnago vr parafarmacia 04751540230 martinamarchetto@gmail.com">
+    <p class="title">Parafarmacia Marchetto della Dott.essa Martina Bianchetto</p>
+    <p class="meta">Legnago (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Marchetto%20della%20Dott.essa&amp;r911188165f344657afb9eeaa1ae8998a=Martina%20Bianchetto&amp;r26540616401e4f999c44de10ddc004ee=Legnago&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04751540230&amp;r1addcad129b44b3cb2220834a33335d5=martinamarchetto%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia sanitaria bonfanti dott.ssa nicoletta legnago vr parafarmacia 03623200239 bonfanti.nicoletta@libero.it">
+    <p class="title">Parafarmacia Sanitaria Bonfanti Dott.ssa Nicoletta</p>
+    <p class="meta">Legnago (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Sanitaria%20Bonfanti%20Dott.ssa&amp;r911188165f344657afb9eeaa1ae8998a=Nicoletta&amp;r26540616401e4f999c44de10ddc004ee=Legnago&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03623200239&amp;r1addcad129b44b3cb2220834a33335d5=bonfanti.nicoletta%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia lugagnano s.a.s. del dott. salv atore riga lugagnano vr farmacia 02730850233 info@farmacialugagnano.it">
+    <p class="title">Farmacia Lugagnano S.a.s. del Dott. Salv atore Riga</p>
+    <p class="meta">Lugagnano (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Lugagnano%20S.a.s.%20del%20Dott.%20Salv&amp;r911188165f344657afb9eeaa1ae8998a=atore%20Riga&amp;r26540616401e4f999c44de10ddc004ee=Lugagnano&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02730850233&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmacialugagnano.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia pumo lugagnano di sona vr farmacia 04580490235 farmaciapumo@gmail.com">
+    <p class="title">Farmacia Pumo</p>
+    <p class="meta">Lugagnano di Sona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Pumo&amp;r26540616401e4f999c44de10ddc004ee=Lugagnano%20di%20Sona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04580490235&amp;r1addcad129b44b3cb2220834a33335d5=farmaciapumo%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia ferrari dott.ssa fiammetta marano di valpolicella vr farmacia 03771790239 farmaciavalgatara@libero.it">
+    <p class="title">Farmacia Ferrari dott.ssa Fiammetta</p>
+    <p class="meta">Marano Di Valpolicella (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Ferrari%20dott.ssa%20Fiammetta&amp;r26540616401e4f999c44de10ddc004ee=Marano%20Di%20Valpolicella&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03771790239&amp;r1addcad129b44b3cb2220834a33335d5=farmaciavalgatara%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia giulietto dott.ssa roberta minerbe vr parafarmacia 04195100237 ">
+    <p class="title">Parafarmacia Giulietto dott.ssa Roberta</p>
+    <p class="meta">Minerbe (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Giulietto%20dott.ssa%20Roberta&amp;r26540616401e4f999c44de10ddc004ee=Minerbe&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04195100237&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia all&amp;#x27;angelo di enrico quinto e m ichele farri s.n.c. negrar vr farmacia 02404330231 farmacianegrar@gmail.com">
+    <p class="title">Farmacia All&#x27;Angelo di Enrico Quinto e M ichele Farri S.n.c.</p>
+    <p class="meta">Negrar (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20All%27Angelo%20di%20Enrico%20Quinto%20e%20M&amp;r911188165f344657afb9eeaa1ae8998a=ichele%20Farri%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Negrar&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02404330231&amp;r1addcad129b44b3cb2220834a33335d5=farmacianegrar%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san rocco s.n.c. pedemonte vr farmacia 02405830239 farmarocco@tin.it">
+    <p class="title">Farmacia San Rocco S.n.c.</p>
+    <p class="meta">Pedemonte (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Rocco%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Pedemonte&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02405830239&amp;r1addcad129b44b3cb2220834a33335d5=farmarocco%40tin.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia balconi s.n.c. di russo barbara &amp;amp; russo mario pescantina vr farmacia 04330780232 farmacia.balconi@gmail.com">
+    <p class="title">Farmacia Balconi S.n.c. di Russo Barbara &amp; Russo Mario</p>
+    <p class="meta">Pescantina (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Balconi%20S.n.c.%20di%20Russo%20Barbara&amp;r911188165f344657afb9eeaa1ae8998a=%26%20Russo%20Mario&amp;r26540616401e4f999c44de10ddc004ee=Pescantina&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04330780232&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.balconi%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san benedetto sas peschiera del garda vr farmacia 04730240233 ">
+    <p class="title">Farmacia San Benedetto sas</p>
+    <p class="meta">Peschiera del Garda (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Benedetto%20sas&amp;r26540616401e4f999c44de10ddc004ee=Peschiera%20del%20Garda&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04730240233&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia dott. bellamoli del dott. sandr o bellamoli e c. s.n.c. poiano di valpantena vr farmacia 03893320238 ">
+    <p class="title">Farmacia Dott. Bellamoli Del Dott. Sandr o Bellamoli e C. S.n.c.</p>
+    <p class="meta">Poiano Di Valpantena (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Dott.%20Bellamoli%20Del%20Dott.%20Sandr&amp;r911188165f344657afb9eeaa1ae8998a=o%20Bellamoli%20e%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Poiano%20Di%20Valpantena&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03893320238&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia biondani di losi mara pressana vr farmacia 02485440230 ">
+    <p class="title">Farmacia Biondani di Losi Mara</p>
+    <p class="meta">Pressana (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Biondani%20di%20Losi%20Mara&amp;r26540616401e4f999c44de10ddc004ee=Pressana&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02485440230&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia rossignoli snc ronco d&amp;#x27;adige (albaro) vr farmacia 03035340235 farmacia.rossignoli@outlook.com">
+    <p class="title">Farmacia Rossignoli snc</p>
+    <p class="meta">Ronco D&#x27;adige (albaro) (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Rossignoli%20snc&amp;r26540616401e4f999c44de10ddc004ee=Ronco%20D%27adige%20%28albaro%29&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03035340235&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.rossignoli%40outlook.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia domegliara s.a.s. dei dottori a ntonio zonato e riccardo sorgi s. ambrogio di valpolicella vr farmacia 04372490237 info@farmaciadomegliara.it">
+    <p class="title">Farmacia Domegliara S.a.s. dei Dottori A ntonio Zonato E Riccardo Sorgi</p>
+    <p class="meta">S. Ambrogio Di Valpolicella (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Domegliara%20S.a.s.%20dei%20Dottori%20A&amp;r911188165f344657afb9eeaa1ae8998a=ntonio%20Zonato%20E%20Riccardo%20Sorgi&amp;r26540616401e4f999c44de10ddc004ee=S.%20Ambrogio%20Di%20Valpolicella&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04372490237&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciadomegliara.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia villabella barbara e daniela san bonifacio vr farmacia 04489170235 farmaciavillabella@libero.it">
+    <p class="title">Farmacia Villabella Barbara e Daniela</p>
+    <p class="meta">San Bonifacio (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Villabella&amp;r911188165f344657afb9eeaa1ae8998a=Barbara%20e%20Daniela&amp;r26540616401e4f999c44de10ddc004ee=San%20Bonifacio&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04489170235&amp;r1addcad129b44b3cb2220834a33335d5=farmaciavillabella%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia al redentore dott.ssa linda rat ti e c. s.a.s. san bonifacio vr farmacia 04523260232 farmacia.ratti@libero.it">
+    <p class="title">Farmacia al Redentore dott.ssa Linda Rat ti e C. S.a.s.</p>
+    <p class="meta">San Bonifacio (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20al%20Redentore%20dott.ssa%20Linda%20Rat&amp;r911188165f344657afb9eeaa1ae8998a=ti%20e%20C.%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=San%20Bonifacio&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04523260232&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.ratti%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="cestari luca studio di terapia manuale e osteopatia san giovanni lupatoto vr professionista 02682790239 xlu.ce@libero.it">
+    <p class="title">CESTARI LUCA Studio di Terapia Manuale e Osteopatia</p>
+    <p class="meta">San Giovanni Lupatoto (VR) • Professionista</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=CESTARI%20LUCA&amp;r911188165f344657afb9eeaa1ae8998a=Studio%20di%20Terapia%20Manuale%20e%20Osteopatia&amp;r26540616401e4f999c44de10ddc004ee=San%20Giovanni%20Lupatoto&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Professionista&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02682790239&amp;r1addcad129b44b3cb2220834a33335d5=xlu.ce%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia fittà dott. marcello san giovanni lupatoto vr farmacia 01833250234 farmacia.fitta@libero.it">
+    <p class="title">Farmacia Fittà Dott. Marcello</p>
+    <p class="meta">San Giovanni Lupatoto (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Fitt%C3%A0%20Dott.%20Marcello&amp;r26540616401e4f999c44de10ddc004ee=San%20Giovanni%20Lupatoto&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01833250234&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.fitta%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia nigri s.a.s. san martino buon albergo vr farmacia 03789690231 farmacia.nigri@tiscali.it">
+    <p class="title">Farmacia Nigri S.a.s.</p>
+    <p class="meta">San Martino Buon Albergo (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Nigri%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=San%20Martino%20Buon%20Albergo&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03789690231&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.nigri%40tiscali.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia verona est s.n.c. di turco tull io &amp;amp; c. san martino buon albergo vr farmacia 02550080234 farmaciaveronaest@libero.it">
+    <p class="title">Farmacia Verona Est S.n.c. Di Turco Tull io &amp; C.</p>
+    <p class="meta">San Martino Buon Albergo (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Verona%20Est%20S.n.c.%20Di%20Turco%20Tull&amp;r911188165f344657afb9eeaa1ae8998a=io%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=San%20Martino%20Buon%20Albergo&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02550080234&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaveronaest%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia preceruti matteo e c. s.a.s. san vito al mantico vr farmacia 04647180233 ">
+    <p class="title">Farmacia Preceruti Matteo e c. S.a.s.</p>
+    <p class="meta">San Vito Al Mantico (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Preceruti%20Matteo%20e%20c.%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=San%20Vito%20Al%20Mantico&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04647180233&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia dottoressa sarti silvia valeggio sul mincio vr parafarmacia 04154660239 parafarmaciasarti@gmail.com">
+    <p class="title">Parafarmacia Dottoressa Sarti Silvia</p>
+    <p class="meta">Valeggio Sul Mincio (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Dottoressa%20Sarti%20Silvia&amp;r26540616401e4f999c44de10ddc004ee=Valeggio%20Sul%20Mincio&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04154660239&amp;r1addcad129b44b3cb2220834a33335d5=parafarmaciasarti%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="agec (farmacia comunale chievo) verona vr farmacia 02769110236 ">
+    <p class="title">Agec (Farmacia Comunale Chievo)</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Agec%20%28Farmacia%20Comunale%20Chievo%29&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02769110236&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="agec (farmacia comunale golosine) verona vr farmacia 02769110236 ">
+    <p class="title">Agec (Farmacia Comunale Golosine)</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Agec%20%28Farmacia%20Comunale%20Golosine%29&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02769110236&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="agec (farmacia comunale olimpia) verona vr farmacia 02769110236 ">
+    <p class="title">Agec (Farmacia Comunale Olimpia)</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Agec%20%28Farmacia%20Comunale%20Olimpia%29&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02769110236&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="agec (farmacia comunale palazzina) verona vr farmacia 02769110236 ">
+    <p class="title">Agec (Farmacia Comunale Palazzina)</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Agec%20%28Farmacia%20Comunale%20Palazzina%29&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02769110236&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia armani di armani claudio s.a.s. verona vr farmacia 03057840237 info@farmacia-armani.it">
+    <p class="title">Farmacia Armani di Armani Claudio S.a.s.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Armani%20di%20Armani%20Claudio%20S.a.s.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03057840237&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmacia-armani.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia ceccherelli &amp;amp; c. s.n.c. verona vr farmacia 04078340231 farmaciaceccherelli@gmail.com">
+    <p class="title">Farmacia Ceccherelli &amp; C. S.n.c.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Ceccherelli%20%26%20C.%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04078340231&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaceccherelli%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia centrale signorini luca e rober to s.n.c. verona vr farmacia 02404340230 info@farmaciasignorini.it">
+    <p class="title">Farmacia Centrale Signorini Luca e Rober to S.n.c.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Centrale%20Signorini%20Luca%20e%20Rober&amp;r911188165f344657afb9eeaa1ae8998a=to%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=02404340230&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciasignorini.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia due campane dott.ssa carraroli g. &amp;amp; c. s.n.c. verona vr farmacia 03257750236 farmaciaduecampane@gmail.com">
+    <p class="title">Farmacia Due Campane Dott.ssa Carraroli G. &amp; C. s.n.c.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Due%20Campane%20Dott.ssa%20Carraroli&amp;r911188165f344657afb9eeaa1ae8998a=G.%20%26%20C.%20s.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03257750236&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaduecampane%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia roma dott.ssa elena vecchioni verona vr farmacia 03270730231 far.vecchionielena@libero.it">
+    <p class="title">Farmacia Roma Dott.ssa Elena Vecchioni</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Roma%20Dott.ssa%20Elena%20Vecchioni&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03270730231&amp;r1addcad129b44b3cb2220834a33335d5=far.vecchionielena%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san massimo s.a.s. di prati ugo verona vr farmacia 04377220233 info@farmaciasanmassimo.it">
+    <p class="title">Farmacia San Massimo S.a.s. Di Prati Ugo</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Massimo%20S.a.s.%20Di%20Prati%20Ugo&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04377220233&amp;r1addcad129b44b3cb2220834a33335d5=info%40farmaciasanmassimo.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san paolo s.n.c. verona vr farmacia 04438210231 farmaciaspaolo@libero.it">
+    <p class="title">Farmacia San Paolo S.n.c.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Paolo%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04438210231&amp;r1addcad129b44b3cb2220834a33335d5=farmaciaspaolo%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia san zeno s.n.c. verona vr farmacia 04239990239 fabiosembenini@tin.it">
+    <p class="title">Farmacia San Zeno S.n.c.</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20San%20Zeno%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04239990239&amp;r1addcad129b44b3cb2220834a33335d5=fabiosembenini%40tin.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia sant&amp;#x27;anastasia sas verona vr farmacia 04589240235 farmacia.anastasia@libero.it">
+    <p class="title">Farmacia Sant&#x27;Anastasia Sas</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Sant%27Anastasia%20Sas&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04589240235&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.anastasia%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia soprana dott.ssa alessandra verona vr farmacia 03260780238 ">
+    <p class="title">Farmacia Soprana Dott.ssa Alessandra</p>
+    <p class="meta">Verona (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Soprana%20Dott.ssa%20Alessandra&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03260780238&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia la perla di dott.ssa marta tubini verona vr parafarmacia 04540020239 ">
+    <p class="title">Parafarmacia La Perla di Dott.ssa Marta Tubini</p>
+    <p class="meta">Verona (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20La%20Perla%20di%20Dott.ssa%20Marta&amp;r911188165f344657afb9eeaa1ae8998a=Tubini&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04540020239&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia viverbene s.a.s di loda gio vanna &amp;amp; c. verona vr parafarmacia 03713820235 vivrbeneloda@gmail.com">
+    <p class="title">Parafarmacia Viverbene S.a.s Di Loda Gio vanna &amp; C.</p>
+    <p class="meta">Verona (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20Viverbene%20S.a.s%20Di%20Loda%20Gio&amp;r911188165f344657afb9eeaa1ae8998a=vanna%20%26%20C.&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03713820235&amp;r1addcad129b44b3cb2220834a33335d5=vivrbeneloda%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="parafarmacia del sole dott.ssa concetta gioffrè verona vr parafarmacia 04592450235 ">
+    <p class="title">Parafarmacia del Sole Dott.ssa Concetta Gioffrè</p>
+    <p class="meta">Verona (VR) • Parafarmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Parafarmacia%20del%20Sole%20Dott.ssa%20Concetta&amp;r911188165f344657afb9eeaa1ae8998a=Gioffr%C3%A8&amp;r26540616401e4f999c44de10ddc004ee=Verona&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Parafarmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=04592450235&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia de tomi dr. francesco villa bartolomea vr farmacia 01654750239 farmacia.detomi@libero.it">
+    <p class="title">Farmacia De Tomi Dr. Francesco</p>
+    <p class="meta">Villa Bartolomea (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20De%20Tomi%20Dr.%20Francesco&amp;r26540616401e4f999c44de10ddc004ee=Villa%20Bartolomea&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=01654750239&amp;r1addcad129b44b3cb2220834a33335d5=farmacia.detomi%40libero.it&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+  <div class="card" data-text="farmacia ss. pietro e paolo s.n.c. zevio vr farmacia 03173210232 pietroepaolofarma@gmail.com">
+    <p class="title">Farmacia Ss. Pietro e Paolo S.n.c.</p>
+    <p class="meta">Zevio (VR) • Farmacia</p>
+    <a class="btn" href="https://forms.office.com/Pages/ResponsePage.aspx?id=nKtCoyvbA0i4vGbx7zHXWHvai3XR44xKmD6FRWRkL9pUNUpYVThRTElGMzkwRlRBMkVQWUJGQkpZTCQlQCN0PWcu&amp;r444f7f325e7f494884a64210762d71cf=Farmacia%20Ss.%20Pietro%20e%20Paolo%20S.n.c.&amp;r26540616401e4f999c44de10ddc004ee=Zevio&amp;r8df9a2a8446640338ce40a1c53c513d7=VR&amp;rbafce5adc91849a2a8e7921033a3f0d3=Farmacia&amp;rbcd585b65b4a4b44861c691e6a7bdce1=03173210232&amp;r1addcad129b44b3cb2220834a33335d5=pietroepaolofarma%40gmail.com&amp;r59bc1e759dc143c48cba2b322870aea3=Mancini%20Andrea" target="_blank" rel="noopener">Apri modulo</a>
+  </div>
+</div>
+</body>
+</html>
