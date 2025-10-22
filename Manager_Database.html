@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database clienti – Manager</title>
+<meta name="robots" content="noindex,nofollow">
+<style>
+  body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;margin:0;background:#f7f7f8}
+  header{background:#0f172a;color:#fff;padding:16px 20px}
+  h1{font-size:20px;margin:0}
+  .wrap{padding:16px;max-width:1200px;margin:0 auto}
+  .tools{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0 16px}
+  input{flex:1;min-width:260px;padding:10px 12px;border:1px solid #e5e7eb;border-radius:10px}
+  button{padding:10px 12px;border:1px solid #0f172a;border-radius:10px;background:#fff;cursor:pointer}
+  .table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e5e7eb;border-radius:12px;overflow:hidden}
+  .table th,.table td{padding:10px 12px;border-bottom:1px solid #e5e7eb;font-size:14px;vertical-align:top}
+  .table th{background:#f1f5f9;text-align:left}
+  a.btn{display:inline-block;padding:6px 10px;border:1px solid #0f172a;border-radius:8px;text-decoration:none}
+  .muted{color:#64748b}
+</style>
+</head>
+<body>
+<header><h1>Database clienti – Manager</h1></header>
+<div class="wrap">
+  <div class="tools">
+    <input id="q" placeholder="Cerca agente, ragione sociale, comune, tipologia, P. IVA" oninput="filterRows()">
+    <button onclick="downloadCSV()">Scarica CSV</button>
+  </div>
+  <p class="muted" id="status">Caricamento…</p>
+  <table class="table" id="t" style="display:none">
+    <thead><tr>
+      <th>Agente</th><th>Ragione sociale</th><th>Tipologia</th><th>Comune</th><th>Provincia</th><th>P. IVA</th><th>Email</th><th>Modulo</th>
+    </tr></thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script>
+const OWNER = "DFenstec";          // se cambi utente, aggiorna qui
+const REPO  = "schede-clienti";    // se cambi repo, aggiorna qui
+const API   = `https://api.github.com/repos/${OWNER}/${REPO}/contents/`;
+
+// Normalizza testo rimuovendo accenti e punteggiatura per la ricerca
+function norm(s){ 
+  return (s||"").toString().toLowerCase()
+    .normalize("NFD").replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9 ]+/g," ").replace(/\s+/g," ").trim();
+}
+
+function filterRows(){
+  const q = norm(document.getElementById('q').value);
+  const rows = document.querySelectorAll('#t tbody tr');
+  rows.forEach(tr=>{
+    const key = tr.getAttribute('data-key');
+    tr.style.display = key.includes(q) ? "" : "none";
+  });
+}
+
+function toCSV(rows){
+  const esc = v => `"${(v||"").toString().replace(/"/g,'""')}"`;
+  const header = ["Agente","Ragione sociale","Tipologia","Comune","Provincia","P. IVA","Email","Modulo"];
+  const out = [header.map(esc).join(",")];
+  rows.forEach(r=> out.push([
+    r.agente, r.ragione, r.tipologia, r.comune, r.provincia, r.piva, r.email, r.url
+  ].map(esc).join(",")));
+  return out.join("\n");
+}
+
+function downloadCSV(){
+  const data = window.__ALL_ROWS__ || [];
+  const csv = toCSV(data);
+  const blob = new Blob([csv], {type: "text/csv;charset=utf-8;"});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = "Database_Clienti_Tutti_Agenti.csv";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+}
+
+function parseAgentName(filename){
+  // Mobile_Agente_Nome_Cognome.html  →  "Nome Cognome"
+  return filename.replace(/^Mobile_Agente_/,"").replace(/\.html$/,"").replace(/_/g," ").trim();
+}
+
+async function fetchText(url){
+  const r = await fetch(url);
+  if(!r.ok) throw new Error(`HTTP ${r.status}`);
+  return await r.text();
+}
+
+// Estrae le card dal file HTML dell’agente
+function extractCards(html, agente){
+  const div = document.createElement('div');
+  div.innerHTML = html;
+  const cards = [...div.querySelectorAll('.card')];
+  const rows = [];
+  cards.forEach(card=>{
+    const title = card.querySelector('.title')?.textContent?.trim() || "";
+    const meta  = card.querySelector('.meta')?.textContent?.trim() || "";
+    const url   = card.querySelector('a.btn[href]')?.getAttribute('href') || "";
+    // Heuristics sui metadati: "Comune (PR) • Tipologia"
+    let comune="", provincia="", tipologia="";
+    const m = meta.match(/^(.+?)\s*\(([^)]+)\)\s*(?:•\s*(.+))?$/);
+    if(m){ comune=m[1]||""; provincia=m[2]||""; tipologia=m[3]||""; }
+    rows.push({
+      agente, ragione: title, tipologia, comune, provincia, piva:"", email:"", url,
+      key: norm([agente,title,tipologia,comune,provincia].join(" "))
+    });
+  });
+  return rows;
+}
+
+(async function run(){
+  try{
+    const status = document.getElementById('status');
+    status.textContent = "Lettura elenco pagine agenti…";
+    const list = await (await fetch(API)).json();
+
+    // prendi SOLO i file HTML agente
+    const pages = list.filter(x =>
+      x.type === 'file' && x.name.endsWith('.html') &&
+      x.name.startsWith('Mobile_Agente_') &&
+      x.name !== 'Manager_Database.html'
+    );
+
+    if(!pages.length){ status.textContent = "Nessuna pagina agente trovata."; return; }
+
+    const all = [];
+    let done = 0;
+    for(const p of pages){
+      const agente = parseAgentName(p.name);
+      status.textContent = `Carico ${agente}… (${++done}/${pages.length})`;
+      try{
+        const html = await fetchText(p.download_url);
+        const rows = extractCards(html, agente);
+        all.push(...rows);
+      }catch(e){
+        console.warn("Errore su", p.name, e);
+      }
+    }
+
+    // render tabella
+    const tbody = document.querySelector('#t tbody');
+    all.forEach(r=>{
+      const tr = document.createElement('tr');
+      tr.setAttribute('data-key', r.key);
+      tr.innerHTML =
+        `<td>${r.agente}</td>`+
+        `<td>${r.ragione}</td>`+
+        `<td>${r.tipologia||""}</td>`+
+        `<td>${r.comune||""}</td>`+
+        `<td>${r.provincia||""}</td>`+
+        `<td>${r.piva||""}</td>`+
+        `<td>${r.email||""}</td>`+
+        `<td><a class="btn" href="${r.url}" target="_blank" rel="noopener">Apri modulo</a></td>`;
+      tbody.appendChild(tr);
+    });
+
+    window.__ALL_ROWS__ = all;
+    document.getElementById('t').style.display = '';
+    status.textContent = `Caricati ${all.length} punti vendita da ${pages.length} pagine agente.`;
+  }catch(e){
+    console.error(e);
+    document.getElementById('status').textContent = "Errore durante il caricamento.";
+  }
+})();
+</script>
+</body>
+</html>
