@@ -70,14 +70,39 @@
   }
 
   // Costruisce il link usando encodeURIComponent: niente "+" nel modulo
-  function buildFormUrl(row){
-    const url = new URL(FORM_BASE);
-    const add = (key, val) => {
-      if(val === null || val === undefined) return;
-      const v = String(val).trim();
-      if(!v) return;
-      url.searchParams.set(key, v);
-    };
+ function buildFormUrl(row){
+  const url = new URL(FORM_BASE);
+
+  const add = (key, val, clean=true) => {
+    if(val === null || val === undefined) return;
+
+    let v = String(val);
+
+    // Pulizia FORZATA: elimina i + e normalizza spazi (solo per campi testuali)
+    if(clean){
+      v = v.replace(/\+/g, " ").replace(/\s+/g, " ").trim();
+    } else {
+      v = v.trim();
+    }
+
+    if(!v) return;
+    url.searchParams.set(key, v);
+  };
+
+  // Campi testuali: pulizia ON
+  add(KEYS.descr1, row["Descr. 1"] || row["Descr1"] || row["descr1"], true);
+  add(KEYS.descr2, row["Descr. 2"] || row["Descr2"] || row["descr2"], true);
+  add(KEYS.comune, row["Comune"] || row["comune"], true);
+  add(KEYS.provincia, row["Provincia"] || row["provincia"], true);
+  add(KEYS.tipologia, row["Tipologia punto vendita"] || row["Tipologia"] || row["tipologia"], true);
+  add(KEYS.agente, row["Agente"] || row["agente"], true);
+
+  // Campi non testuali: pulizia OFF
+  add(KEYS.piva, row["P.Iva"] || row["P.iva"] || row["PIVA"] || row["piva"], false);
+  add(KEYS.email, row["Email punto vendita"] || row["Email"] || row["email"], false);
+
+  return url.toString();
+}
 
     add(KEYS.descr1, row["Descr. 1"] || row["Descr1"] || row["descr1"]);
     add(KEYS.descr2, row["Descr. 2"] || row["Descr2"] || row["descr2"]);
