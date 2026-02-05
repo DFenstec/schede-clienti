@@ -177,3 +177,10 @@
 </script>
 </body>
 </html>
+function cleanText(v){
+  return (v ?? "")
+    .toString()
+    .replace(/\+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+}
